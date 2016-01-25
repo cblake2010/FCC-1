@@ -1,3 +1,4 @@
+//Title Case a Sentence	Jan 21, 2016		View my solution
 String.prototype.capitalizeFirst = function() {
   // Capitalizes the first word of a string and lowercases the remaining
   return this.charAt(0).toUpperCase() + this.slice(1).toLowerCase();
@@ -18,6 +19,7 @@ function titleCase(str) {
 
 console.log(titleCase("This is ANOTHER TEst."));
 
+//Return Largest Numbers in Arrays	Jan 21, 2016		View my solution
 function largestOfFour(arr) {
   // You can do this!
   var lrgArr = [];
@@ -29,7 +31,6 @@ function largestOfFour(arr) {
   }
   return lrgArr;
 }
-
 
 largestOfFour([
   [4, 5, 1, 3],
@@ -44,6 +45,8 @@ console.log(largestOfFour([
   [1000, 1001, 857, 1]
 ]));
 
+
+//Confirm the Ending	Jan 21, 2016		View my solution
 function end(str, target) {
   // "Never give up and good luck will find you."
   // -- Falcor
@@ -53,26 +56,67 @@ function end(str, target) {
 end("Bastian", "n");
 console.log(end("Bastian", "n"));
 
+//Chunk
 function chunk(arr, size) {
   // Break it up.
-  var newArr = [];
-  var str;
+  //Create the initial array and initial nested array
+  var newArr = new Array();
+  newArr[0] = new Array();
+  //Begin nested array index at 0
   var j = 0;
 
-
   for (var i = 0; i < arr.length; i++) {
-    str = arr[i];
-    newArr[i] = [];
-    if (j > size) {
-      j = 0;
+    //Create Next Nested Array
+    if (newArr[j].length >= size) {
+      j++;
+      newArr[j] = new Array();
     }
-    newArr[i][j] = arr[i];
-    j++;
-    for (j; j < size; j++) {
-
-    }
+    newArr[j].push(arr[i]);
   }
   return newArr;
 }
-console.log(chunk(["a", "b", "c", "d"], 2));
+console.log(chunk(["a", "b", "c", "d", "e"], 2));
 chunk(["a", "b", "c", "d"], 2);
+
+//Return the remaining elements of an array after chopping off n elements from the head.
+//The head meaning the beginning of the array, or the zeroth index
+function slasher(arr, howMany) {
+  // it doesn't always pay to be first
+  return arr.slice(howMany, arr.length);
+}
+console.log(slasher([1, 2, 3], 1));
+slasher([1, 2, 3], 2);
+
+//Mutations
+Array.prototype.canMake = function() {
+  for (var i = 0; i < this[1].length; i++) {
+    if (this[0].toLowerCase().indexOf(this[1].split("")[i].toLowerCase()) < 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
+function mutation(arr) {
+
+  return arr.canMake();
+}
+console.log(mutation(["hello", "heL"]));
+mutation(["hello", "hey"]);
+
+Array.prototype.removeFalse = function() {
+  for (var i = 0; i < this.length; i++) {
+    if (!this[i]) {
+      this.splice(i, 1);
+      i -= 1;
+    }
+  }
+  return this;
+};
+
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  return arr.removeFalse();
+}
+arr = [7, "ate", "", false, 9];
+bouncer(arr);
