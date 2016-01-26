@@ -150,15 +150,15 @@ destroyer([1, 2, 3, 1, 2, 3], 2, 3);
 //Where Do I belong
 function where(arr, num) {
   var j
-  // Find my place in this sorted array.
-  arr.sort(function(a,b) {
-    return a-b
+    // Find my place in this sorted array.
+  arr.sort(function(a, b) {
+    return a - b
   })
-  for(var i = 0; i < arr.length; i++) {
+  for (var i = 0; i < arr.length; i++) {
     j = i + 1;
-    if(num === arr[i]) {
+    if (num === arr[i]) {
       return i;
-    } else if(num >= arr[i] && num < arr[j]) {
+    } else if (num >= arr[i] && num < arr[j]) {
       return j;
     }
   }
@@ -169,12 +169,12 @@ console.log(where([2, 5, 10], 15));
 //Caeser's Cipher
 function rot13(str) { // LBH QVQ VG!
   var newStr = "";
-  for (var i=0; i<str.length; i++) {
-    if ((str.charCodeAt(i) >64) && (str.charCodeAt(i) <91)) {
+  for (var i = 0; i < str.length; i++) {
+    if ((str.charCodeAt(i) > 64) && (str.charCodeAt(i) < 91)) {
       if (str.charCodeAt(i) + 13 > 90) {
-        newStr += String.fromCharCode(13 - (90 - str.charCodeAt(i))+64)
+        newStr += String.fromCharCode(13 - (90 - str.charCodeAt(i)) + 64)
       } else {
-        newStr += String.fromCharCode(str.charCodeAt(i)+13)
+        newStr += String.fromCharCode(str.charCodeAt(i) + 13)
       }
     } else {
       newStr += String.fromCharCode(str.charCodeAt(i))
