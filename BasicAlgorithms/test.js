@@ -120,3 +120,29 @@ function bouncer(arr) {
 }
 arr = [7, "ate", "", false, 9];
 bouncer(arr);
+
+//Seek and Destroy
+Array.prototype.seekDestroy = function(arr) {
+  for (var i = 0; i < this.length; i++) {
+    for (var j = 0; j < arr.length; j++) {
+      if (this[i] === arr[j]) {
+        this.splice(i, 1);
+        i -= 1;
+      }
+    }
+
+  }
+  return this;
+};
+
+function destroyer() {
+  // Remove all the values
+  var arr = arguments[0];
+  var seekArr = new Array()
+  for (var i = 0; i < arguments.length; i++) {
+    seekArr.push(arguments[i]);
+  }
+  arr.seekDestroy(seekArr);
+  return arr;
+};
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
