@@ -186,3 +186,6 @@ function rot13(str) { // LBH QVQ VG!
 //rot13("SERR PBQR PNZC");
 console.log(rot13("SERR PBQR PNZC"));
 console.log("?".charCodeAt());
+
+//Just a test
+console.log("Test");
