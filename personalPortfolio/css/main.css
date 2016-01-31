@@ -4,11 +4,12 @@ h1 {
 }
 
 body {
+  height: 100%;
   padding-top: 250px;
 }
 
-.sub-section {
-  padding-top: 200%;
+.section {
+  height: 100vh;
 }
 
 .row {
