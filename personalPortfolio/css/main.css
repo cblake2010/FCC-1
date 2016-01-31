@@ -7,6 +7,13 @@ body {
   padding-top: 250px;
 }
 
+.sub-section {
+  padding-top: 200%;
+}
+
+.row {
+  padding-bottom: 20px;
+}
 #sub-heading {
   text-align: center;
 }
