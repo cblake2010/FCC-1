@@ -12,6 +12,10 @@ body {
   text-align: left;
   padding-top: 50px;
 }
+
+#section-logo {
+  text-align: left;
+}
 .col-centered {
   float: none;
   margin: 0 auto;
