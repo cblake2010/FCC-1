@@ -1,7 +1,15 @@
 h1 {
   font-family: Orbitron, monospace;;
+  text-align: center;
 }
 
+body {
+  padding-top: 200px;
+}
+
+#sub-heading {
+  text-align: center;
+}
 .btn {
   text-align: left;
 }
