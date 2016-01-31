@@ -189,3 +189,20 @@ console.log("?".charCodeAt());
 
 //Just a test
 console.log("Test");
+
+function destroyer() {
+  //firstArray Equal to First Element of arguments
+  var firstArray = arguments[0];
+  var restOfArray = [];
+  var lastArray = [];
+  //restOfArray equal to second and each subsequent element of arguments
+  for (x = 1; x < arguments.length; x++) {
+    restOfArray.push(arguments[x]);
+  }
+//Filter Results based on value from firstArray contained in restOfArray
+//And indexOf function returns a -1 when value is not contained.
+  lastArray = firstArray.filter(function(value) {
+    return restOfArray.indexOf(value) < 0;
+  });
+  return lastArray;
+}
