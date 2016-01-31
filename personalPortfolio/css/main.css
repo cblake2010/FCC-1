@@ -5,6 +5,7 @@ h1 {
 body {
   height: 100%;
   padding-top: 250px;
+  background-image: url("./../images/mainBackground.gif");
 }
 .section {
   height: 100vh;
