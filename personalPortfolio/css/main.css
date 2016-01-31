@@ -1,18 +1,15 @@
 h1 {
-  font-family: Orbitron, monospace;;
+  font-family: Orbitron, monospace;
   text-align: center;
 }
-
 body {
   height: 100%;
   padding-top: 250px;
 }
-
 .section {
   height: 100vh;
   padding-top: 100px;
 }
-
 .section:nth-child(1) {
   background: lightblue;
 }
@@ -25,7 +22,6 @@ body {
 .section:nth-child(4) {
   background: red;
 }
-
 .row {
   padding-bottom: 20px;
 }
