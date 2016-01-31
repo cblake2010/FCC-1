@@ -10,6 +10,7 @@ body {
 
 #about-text {
   text-align: left;
+  padding-top: 20px;
 }
 .col-centered {
   float: none;
