@@ -8,6 +8,10 @@ body {
   background-image: url("./../images/tweed.png");
 }
 
+#About {
+  background-image: url("./../images/aboutBackground.jpg.png");
+}
+
 #about-text {
   text-align: left;
   padding-top: 50px;
@@ -27,10 +31,7 @@ body {
 }
 .section:nth-child(1) {
   background: lightblue;
-}
-.section:nth-child(2) {
-  background: lightgreen;
-}
+  
 .section:nth-child(3) {
   background: purple;
 }
