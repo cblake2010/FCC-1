@@ -46,10 +46,10 @@ p {
 
 .section {
   background-repeat: no-repeat;
-  background-size: 100% 75vh;
+  background-size: cover;
   height: 100vh;
   padding-top: 20px;
-  text-align: center;
+  text-align: center;;
 }
 
 .thumbnail {
