@@ -46,7 +46,7 @@ p {
 
 .section {
   background-repeat: no-repeat;
-  background-size: 90%% 60%;
+  background-size: 100% 75vh;
   height: 100vh;
   margin-bottom: 0;
   padding-top: 20px;
