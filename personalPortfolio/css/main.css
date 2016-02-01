@@ -9,7 +9,7 @@ body {
 }
 
 #About {
-  background-image: url("./../images/aboutBackground.jpg.png");
+  background-image: url("./../images/aboutBackground.jpg");
 }
 
 #about-text {
@@ -31,7 +31,7 @@ body {
 }
 .section:nth-child(1) {
   background: lightblue;
-  
+
 .section:nth-child(3) {
   background: purple;
 }
