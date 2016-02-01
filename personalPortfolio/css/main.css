@@ -5,11 +5,26 @@ h1 {
 body {
   height: 100%;
   padding-top: 250px;
-  background-image: url("./../images/tweed.png");
+  background-image: url("./../images/overallBackground.png");
+}
+
+#Home {
+  background-image: url("./../images/homeBackground.jpg");
+  background-size:100% 100%;
 }
 
 #About {
   background-image: url("./../images/aboutBackground.jpg");
+  background-size:100% 100%;
+}
+
+#Portfolio {
+  background-image: url("./../images/portfolioBackground.jpg");
+  background-size:100% 100%;
+}
+
+#Contact {
+  background-image: url("./../images/contactBackground.jpg");
   background-size:100% 100%;
 }
 
