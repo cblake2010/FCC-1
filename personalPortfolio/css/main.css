@@ -7,40 +7,38 @@ body {
   padding-top: 150px;
   background-image: url("./../images/overallBackground.png");
 }
-
+#Home {
+  background-image: url("./../images/homeBackground.jpg");
+}
+#About {
+  background-image: url("./../images/aboutBackground.jpg");
+  #about-text {
+    text-align: left;
+    padding-top: 50px;
+  }
+  #section-logo {
+    text-align: left;
+  }
+}
+#Portfolio {
+  background-image: url("./../images/portfolioBackground.jpg");
+}
+#Contact {
+  background-image: url("./../images/contactBackground.jpg");
+}
 .section {
   height: 100vh;
   padding-top: 20px;
   text-align: center;
   background-size: 100% 75vh;
   background-repeat: no-repeat;
-  #Home {
-    background-image: url("./../images/homeBackground.jpg");
-    #sub-heading {
-      text-align: center;
-    }
-  }
-  #About {
-    background-image: url("./../images/aboutBackground.jpg");
-    #about-text {
-      text-align: left;
-      padding-top: 50px;
-    }
-    #section-logo {
-      text-align: left;
-    }
-  }
-  #Portfolio {
-    background-image: url("./../images/portfolioBackground.jpg");
-  }
-  #Contact {
-    background-image: url("./../images/contactBackground.jpg");
-  }
 }
 .row {
   padding-bottom: 20px;
 }
-
+#sub-heading {
+  text-align: center;
+}
 .btn {
   text-align: left;
 }
