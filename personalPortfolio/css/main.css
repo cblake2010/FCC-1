@@ -2,43 +2,54 @@ h1 {
   font-family: Orbitron, monospace;
   text-align: center;
 }
+
 body {
+  background-image: url(http://fullerdevelopment.tnc-group.com/images/overallBackground.png);
   height: 100%;
   padding-top: 150px;
-  background-image: url("./../images/overallBackground.png");
 }
-#Home {
-  background-image: url("./../images/homeBackground.jpg");
-}
-#About {
-  background-image: url("./../images/aboutBackground.jpg");
-}
-#about-text {
+
+p {
+  font-family: cabin:700;
   text-align: left;
+}
+
+#Home {
+  background-image: url(http://fullerdevelopment.tnc-group.com/images/homeBackground.jpg);
+}
+
+#About {
+  background-image: url(http://fullerdevelopment.tnc-group.com/images/aboutBackground.jpg);
+}
+
+#about-text {
   padding-top: 50px;
 }
+
 #section-logo {
   text-align: left;
 }
+
 #Portfolio {
-  background-image: url("./../images/portfolioBackground.jpg");
+  background-image: url(http://fullerdevelopment.tnc-group.com/images/portfolioBackground.jpg);
 }
+
 #Contact {
-  background-image: url("./../images/contactBackground.jpg");
+  background-image: url(http://fullerdevelopment.tnc-group.com/images/contactBackground.jpg);
 }
+
 .section {
+  background-repeat: no-repeat;
+  background-size: 100% 75vh;
   height: 100vh;
   padding-top: 20px;
   text-align: center;
-  background-size: 100% 75vh;
-  background-repeat: no-repeat;
 }
+
 .row {
   padding-bottom: 20px;
 }
-#sub-heading {
-  text-align: center;
-}
+
 .btn {
   text-align: left;
 }
