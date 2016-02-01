@@ -32,6 +32,8 @@ p {
 }
 
 #section-logo {
+  max-width: 400px;
+  max-height: 400px;
   padding-top: 45px;
   text-align: left;
 }
