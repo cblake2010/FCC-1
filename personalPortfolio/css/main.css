@@ -12,13 +12,13 @@ body {
 }
 #About {
   background-image: url("./../images/aboutBackground.jpg");
-  #about-text {
-    text-align: left;
-    padding-top: 50px;
-  }
-  #section-logo {
-    text-align: left;
-  }
+}
+#about-text {
+  text-align: left;
+  padding-top: 50px;
+}
+#section-logo {
+  text-align: left;
 }
 #Portfolio {
   background-image: url("./../images/portfolioBackground.jpg");
