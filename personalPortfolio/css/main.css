@@ -46,8 +46,9 @@ p {
 
 .section {
   background-repeat: no-repeat;
-  background-size: 100% 75vh;
+  background-size: 90%% 60%;
   height: 100vh;
+  margin-bottom: 0;
   padding-top: 20px;
   text-align: center;
 }
