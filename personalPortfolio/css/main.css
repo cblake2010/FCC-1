@@ -10,7 +10,7 @@ body {
 
 #About {
   background-image: url("./../images/aboutBackground.jpg");
-  background-size:100% auto;
+  background-size:100% cover;
 }
 
 #about-text {
