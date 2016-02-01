@@ -12,23 +12,19 @@ body {
 }
 #About {
   background-image: url("./../images/aboutBackground.jpg");
+  #about-text {
+    text-align: left;
+    padding-top: 50px;
+  }
+  #section-logo {
+    text-align: left;
+  }
 }
 #Portfolio {
   background-image: url("./../images/portfolioBackground.jpg");
 }
 #Contact {
   background-image: url("./../images/contactBackground.jpg");
-}
-#about-text {
-  text-align: left;
-  padding-top: 50px;
-}
-#section-logo {
-  text-align: left;
-}
-.col-centered {
-  float: none;
-  margin: 0 auto;
 }
 .section {
   height: 100vh;
