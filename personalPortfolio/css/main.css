@@ -5,14 +5,18 @@ h1 {
 
 body {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/overallBackground.png);
+  font-family: Cabin, monospace;
   height: 100%;
   padding-top: 150px;
 }
 
 p {
   color: rgb(0, 0, 0);
-  font-family: Cabin, monospace;
   text-align: left;
+}
+
+#sub-heading {
+  margin-top: -10px;
 }
 
 #Home {
