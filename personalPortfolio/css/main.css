@@ -14,7 +14,7 @@ body {
 
 p {
   color: rgb(0, 0, 0);
-  text-align: left;
+  text-align: center;
 }
 
 .btn {
@@ -66,11 +66,16 @@ p {
   padding-top: 50px;
 }
 
+#about-text > p {
+  align-text: center;
+}
+
 /* Portfolio Section */
 
 #Portfolio {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/portfolioBackground.jpg);
   padding-top: 6vh;
+  text-align: center;
 }
 
 /* Contact Section */
