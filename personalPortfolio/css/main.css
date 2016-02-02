@@ -21,6 +21,15 @@ p {
   text-align: left;
 }
 
+.btn-xlarge {
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+    font-size: 22px;
+    line-height: normal;
+    padding: 18px 28px;
+    }
+
 /* Sections */
 
 .section {
