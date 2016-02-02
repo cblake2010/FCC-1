@@ -29,13 +29,13 @@ p {
 }
 
 #about-text {
-  padding-top: 50px;
   font-size: 20px;
+  padding-top: 50px;
 }
 
 #section-logo {
-  max-width: 400px;
   max-height: 400px;
+  max-width: 400px;
   padding-top: 60px;
   text-align: left;
 }
