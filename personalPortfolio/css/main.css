@@ -41,7 +41,12 @@ p {
 }
 
 .section-top-left {
- padding: 15px;
+ padding-top: 20px;
+ padding-left: 20px;
+}
+
+.button-contact {
+  padding-top: 10px;
 }
 
 /* Home Section */
@@ -81,5 +86,6 @@ p {
 
 #Contact {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/contactBackground.jpg);
-  padding-top: 20vh;
+  padding-top: 10vh;
+  padding-left: 10vh;
 }
