@@ -57,9 +57,8 @@ p {
   padding-top: 10vh;
 }
 
-.thumbnail {
-  display: inline-block;
-  max-width: 250px;
+.portfolio-item {
+  text-align: center;
 }
 
 .row {
