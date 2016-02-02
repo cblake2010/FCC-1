@@ -40,6 +40,10 @@ p {
   text-align: center;
 }
 
+.section-top-left {
+ padding: 15px;
+}
+
 /* Home Section */
 
 #Home {
@@ -77,5 +81,5 @@ p {
 
 #Contact {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/contactBackground.jpg);
-  padding-top: 6vh;
+  padding-top: 20vh;
 }
