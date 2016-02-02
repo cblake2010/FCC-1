@@ -55,12 +55,10 @@ p {
 
 .portfolio-thumbnails {
   padding-top: 10vh;
-  text-align: center;
-  float: none;
-    margin: 0 auto;
 }
 
 .thumbnail {
+  display: inline-block;
   max-width: 250px;
 }
 
