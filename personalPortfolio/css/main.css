@@ -40,10 +40,6 @@ p {
   text-align: center;
 }
 
-.section-top {
- padding-top: 20px;
-}
-
 .button-contact {
   margin-top: 10px;
 }
@@ -86,5 +82,4 @@ p {
 #Contact {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/contactBackground.jpg);
   padding-top: 10vh;
-  padding-left: 10vh;
 }
