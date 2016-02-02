@@ -12,9 +12,13 @@ body {
   padding-top: 150px;
 }
 
-p {
-  color: rgb(0, 0, 0);
+.p-center {
   text-align: center;
+}
+
+p {
+  color: rgb(0,0,0);
+  text-align: left;
 }
 
 .btn {
