@@ -30,12 +30,13 @@ p {
 
 #about-text {
   padding-top: 50px;
+  font-size: 20px;
 }
 
 #section-logo {
   max-width: 400px;
   max-height: 400px;
-  padding-top: 45px;
+  padding-top: 60px;
   text-align: left;
 }
 
