@@ -12,6 +12,10 @@ body {
   padding-top: 150px;
 }
 
+#about-text > p {
+  align-text: center;
+}
+
 p {
   color: rgb(0, 0, 0);
   text-align: center;
@@ -64,10 +68,6 @@ p {
 #about-text {
   font-size: 20px;
   padding-top: 50px;
-}
-
-#about-text > p {
-  align-text: center;
 }
 
 /* Portfolio Section */
