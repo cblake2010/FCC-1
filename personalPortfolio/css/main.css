@@ -12,8 +12,12 @@ body {
   padding-top: 150px;
 }
 
+.p-center {
+  text-align: center;
+}
+
 p {
-  color: rgb(0, 0, 0);
+  color: rgb(0,0,0);
   text-align: left;
 }
 
@@ -40,6 +44,10 @@ p {
   text-align: center;
 }
 
+.button-contact {
+  margin-top: 10px;
+}
+
 /* Home Section */
 
 #Home {
@@ -62,8 +70,8 @@ p {
   padding-top: 50px;
 }
 
-#section-logo {
-  padding-top: 60px;
+#about-text > p {
+  align-text: center;
 }
 
 /* Portfolio Section */
@@ -71,11 +79,12 @@ p {
 #Portfolio {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/portfolioBackground.jpg);
   padding-top: 6vh;
+  text-align: center;
 }
 
 /* Contact Section */
 
 #Contact {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/contactBackground.jpg);
-  padding-top: 6vh;
+  padding-top: 10vh;
 }
