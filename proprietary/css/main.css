@@ -50,14 +50,6 @@ p {
   text-align: center;
 }
 
-.section-large {
-  background-repe: no-repeat;
-  background-size: cover;
-  height: auto;
-  padding-top: 20px;
-  text-align: center;
-}
-
 .button-contact {
   margin-top: 10px;
 }
@@ -74,6 +66,7 @@ p {
 
 #Raydar {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/homeBackground.jpg);
+  height: auto;
 }
 
 .project-text {
