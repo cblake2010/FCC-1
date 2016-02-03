@@ -16,6 +16,11 @@ body {
   text-align: center;
 }
 
+.sub-heading {
+  margin-top: -10px;
+  text-align: center;
+}
+
 p {
   color: rgb(0, 0, 0);
   text-align: left;
@@ -26,14 +31,13 @@ p {
 }
 
 .btn-xlarge {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  font-size: 22px;
-  line-height: normal;
-  padding: 18px 28px;
-}
-
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+    font-size: 22px;
+    line-height: normal;
+    padding: 18px 28px;
+    }
 
 /* Sections */
 
@@ -49,43 +53,27 @@ p {
   margin-top: 10px;
 }
 
+/* SAIC Section */
 
-/* Home Section */
-
-#Home {
+#SAIC {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/homeBackground.jpg);
 }
 
-#sub-heading {
-  margin-top: -10px;
-  text-align: center;
+/* Raydar Section */
+
+#Raydar {
+  background-image: url(http://fullerdevelopment.tnc-group.com/images/homeBackground.jpg);
 }
 
 
-/* About Section */
-
-#About {
-  background-image: url(http://fullerdevelopment.tnc-group.com/images/aboutBackground.jpg);
-}
-
-#about-text {
+.project-text {
   font-size: 20px;
   padding-top: 50px;
 }
 
-#about-text > p {
+.project-text > p {
   align-text: center;
 }
-
-
-/* Portfolio Section */
-
-#Portfolio {
-  background-image: url(http://fullerdevelopment.tnc-group.com/images/portfolioBackground.jpg);
-  padding-top: 6vh;
-  text-align: center;
-}
-
 
 /* Contact Section */
 
