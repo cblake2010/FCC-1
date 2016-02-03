@@ -49,6 +49,10 @@ p {
   text-align: center;
 }
 
+.section-top-left {
+  padding-top: 40px;
+}
+
 .button-contact {
   margin-top: 10px;
 }
