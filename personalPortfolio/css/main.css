@@ -16,6 +16,10 @@ body {
   text-align: center;
 }
 
+.button-row {
+  padding: 30px;
+}
+
 p {
   color: rgb(0, 0, 0);
   text-align: left;
