@@ -25,6 +25,10 @@ section {
   text-align: center;
 }
 
+section > nav {
+  padding-left: 60px;
+}
+
 p {
   color: rgb(255, 255, 255);
   text-align: left;
