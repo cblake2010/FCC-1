@@ -36,9 +36,12 @@ p.project-text {
 }
 
 h2.sub-heading {
-  color: rgb(255, 255, 255);
   margin-top: -10px;
   text-align: center;
+}
+
+h2 > small {
+  color: rgb(255, 255, 255);
 }
 
 .btn {
