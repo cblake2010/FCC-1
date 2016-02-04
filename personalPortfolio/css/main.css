@@ -78,7 +78,7 @@ p.p-center {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/aboutBackground.jpg);
 }
 
-#About > figure {
+#About >div > figure {
   padding-top: 100px;
 }
 
