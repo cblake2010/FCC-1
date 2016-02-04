@@ -207,14 +207,31 @@ function destroyer() {
   return lastArray;
 }
 
-// Only change code below this line
-function update(id, prop, value) {
-if (prop !== "tracks" && value !== "")
-collection[id][prop] = value;
-} else if(prop === "tracks" && value !== "") {
-collection[id][prop].push(value);
-} else if (value === "") {
-delete.collection[id][prop];
-}
-return collection;
-}
+var arr = [1,2,3,4];
+
+var singleVal = arr.reduce(function(previousVal, currentVal) {
+  console.log("Previous Val=" + previousVal + "  Current Val=" + currentVal)
+  return previousVal + currentVal;
+},4);
+
+console.log("singleVal= "+ singleVal);
+
+var arr = [1,2,3,4];
+
+var singleVal = arr.reduce(function(previousVal, currentVal) {
+  console.log("Previous Val=" + previousVal + "  Current Val=" + currentVal)
+  return previousVal + currentVal;
+},0);
+
+console.log("singleVal= "+ singleVal);
+
+console.log("singleVal= "+ singleVal);
+
+var arr = [1,2,3,4];
+
+var singleVal = arr.reduce(function(previousVal, currentVal) {
+  console.log("Previous Val=" + previousVal + "  Current Val=" + currentVal)
+  return previousVal + currentVal;
+});
+
+console.log("singleVal= "+ singleVal);
