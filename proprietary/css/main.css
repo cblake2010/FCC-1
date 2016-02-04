@@ -12,18 +12,32 @@ body {
   padding-top: 150px;
 }
 
-.p-center {
+section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: solid;
+  height: 100vh;
+  padding-top: 50px;
   text-align: center;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+p.p-center {
+  text-align: center;
+}
+
+p.project-text {
+  font-size: 20px;
+  padding-top: 50px;
 }
 
 .sub-heading {
   margin-top: -10px;
   text-align: center;
-}
-
-p {
-  color: rgb(0, 0, 0);
-  text-align: left;
 }
 
 .btn {
@@ -39,22 +53,11 @@ p {
   padding: 18px 28px;
 }
 
-
 /* Sections */
-
-.section {
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-style: solid;
-  height: 100vh;
-  padding-top: 20px;
-  text-align: center;
-}
 
 .button-contact {
   margin-top: 10px;
 }
-
 
 /* SAIC Section */
 
@@ -62,23 +65,12 @@ p {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/homeBackground.jpg);
 }
 
-
 /* Raydar Section */
 
 #Raydar {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/portfolioBackground.jpg);
   height: auto;
 }
-
-.project-text {
-  font-size: 20px;
-  padding-top: 50px;
-}
-
-.project-text > p {
-  align-text: center;
-}
-
 
 /* Contact Section */
 
