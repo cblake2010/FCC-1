@@ -5,6 +5,10 @@ h1 {
   text-align: center;
 }
 
+h1.left-align {
+  text-align: left;
+}
+
 body {
   background-image: url(http://fullerdevelopment.tnc-group.com/images/overallBackground.png);
   font-family: Cabin, monospace;
