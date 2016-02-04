@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -7,30 +9,58 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   id="svg2"
-   viewBox="0 0 350.00001 200.00001"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="350"
    height="200"
-   width="350">
+   viewBox="0 0 350.00001 200.00001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="fullerDevLogo.svg"
+   inkscape:export-filename="/Users/tfuller/Projects/FCC/personalPortfolio/images/fullerDevLogo.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
   <defs
      id="defs4">
     <linearGradient
-       osb:paint="solid"
-       id="linearGradient6262">
+       id="linearGradient6262"
+       osb:paint="solid">
       <stop
-         id="stop6264"
+         style="stop-color:#000000;stop-opacity:1;"
          offset="0"
-         style="stop-color:#000000;stop-opacity:1;" />
+         id="stop6264" />
     </linearGradient>
     <linearGradient
-       gradientUnits="userSpaceOnUse"
-       y2="856.32703"
-       x2="308.10605"
-       y1="856.32703"
-       x1="42.711506"
+       inkscape:collect="always"
+       xlink:href="#linearGradient6262"
        id="linearGradient6266"
-       xlink:href="#linearGradient6262" />
+       x1="42.711506"
+       y1="856.32703"
+       x2="308.10605"
+       y2="856.32703"
+       gradientUnits="userSpaceOnUse" />
   </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="163.72881"
+     inkscape:cy="130.47208"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:snap-text-baseline="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1075"
+     inkscape:window-x="0"
+     inkscape:window-y="1"
+     inkscape:window-maximized="1" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -44,35 +74,67 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,-852.36218)"
-     id="layer1">
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-852.36218)">
     <path
-       id="path4016-9"
+       style="fill:#000000"
        d="m 21.480289,1042.7099 c 1.10853,-3.7392 57.90505,-160.41047 58.22587,-160.61405 0.30436,-0.19314 38.294061,-3.07853 198.574411,-15.08206 18.19038,-1.36229 33.1812,-2.41207 33.31293,-2.33285 0.13175,0.0792 5.51319,38.90339 11.95879,86.27592 6.44557,47.37251 11.91551,87.27724 12.1554,88.67714 l 0.43616,2.5452 -47.83075,0.3305 c -26.30692,0.1818 -87.16453,0.5482 -135.23914,0.8141 -48.0746,0.266 -97.458361,0.602 -109.741671,0.7466 l -22.33329,0.263 0.48129,-1.6235 z"
-       style="fill:#000000" />
+       id="path4016-9"
+       inkscape:connector-curvature="0" />
     <path
-       id="path4016"
+       style="fill:#2a71ff;fill-opacity:1"
        d="m 12.384302,1036.5001 c 1.108523,-3.7392 57.905046,-160.41047 58.225868,-160.61405 0.304356,-0.19314 38.29406,-3.07853 198.5744,-15.08206 18.19039,-1.36229 33.18121,-2.41207 33.31294,-2.33285 0.13175,0.0792 5.51319,38.90339 11.95879,86.27592 6.44557,47.37252 11.91551,87.27724 12.1554,88.67714 l 0.43616,2.5453 -47.83075,0.3305 c -26.30693,0.1817 -87.16454,0.5481 -135.23915,0.814 -48.074596,0.266 -97.458355,0.602 -109.741664,0.7466 l -22.333289,0.263 0.481295,-1.6235 z"
-       style="fill:#2a71ff;fill-opacity:1" />
+       id="path4016"
+       inkscape:connector-curvature="0" />
     <text
+       sodipodi:linespacing="10%"
+       id="text4260"
+       y="988.64789"
+       x="64.142868"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40.00000381px;line-height:10.00000015%;font-family:Hack;-inkscape-font-specification:'Hack, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.10000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40.00000381px;line-height:10.00000015%;font-family:Hack;-inkscape-font-specification:'Hack, Bold';text-align:start;letter-spacing:-3.32000303px;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.10000001;stroke-miterlimit:4;stroke-dasharray:none;fill:#000000;"
+         y="988.64789"
+         x="64.142868"
+         id="tspan4262"
+         sodipodi:role="line">Development</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40.00000381px;line-height:10.00000015%;font-family:Hack;-inkscape-font-specification:'Hack, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.10000001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="62.142868"
+       y="984.64789"
        id="text4008"
-       y="986.64789"
-       x="42.142868"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="stroke:none;stroke-width:1.25;stroke-miterlimit:4;stroke-dasharray:none"
-         y="986.64789"
-         x="42.142868"
-         id="tspan4010">Development</tspan></text>
+       sodipodi:linespacing="10%"><tspan
+         sodipodi:role="line"
+         id="tspan4010"
+         x="62.142868"
+         y="984.64789"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40.00000381px;line-height:10.00000015%;font-family:Hack;-inkscape-font-specification:'Hack, Bold';text-align:start;letter-spacing:-3.32000303px;writing-mode:lr-tb;text-anchor:start;stroke:none;stroke-width:0.10000001;stroke-miterlimit:4;stroke-dasharray:none">Development</tspan></text>
     <text
-       id="text4000"
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40.00000381px;line-height:125%;font-family:Hack;-inkscape-font-specification:'Hack, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       x="108.28571"
        y="951.64789"
-       x="104.28571"
-       style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Hack;-inkscape-font-specification:Hack;fill:#ffffff"
-         id="tspan4004"
+       id="text4000"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="108.28571"
          y="951.64789"
-         x="104.28571">Fuller</tspan></text>
+         id="tspan4004"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40.00000381px;line-height:125%;font-family:Hack;-inkscape-font-specification:'Hack, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;">Fuller</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text4214"
+       y="947.64789"
+       x="106.28571"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40.00000381px;line-height:125%;font-family:Hack;-inkscape-font-specification:'Hack, Bold';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       xml:space="preserve"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40.00000381px;line-height:125%;font-family:Hack;-inkscape-font-specification:'Hack, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff"
+         id="tspan4216"
+         y="947.64789"
+         x="106.28571"
+         sodipodi:role="line">Fuller</tspan></text>
   </g>
 </svg>
