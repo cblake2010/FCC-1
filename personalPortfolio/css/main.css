@@ -12,17 +12,26 @@ body {
   padding-top: 150px;
 }
 
-.p-center {
+section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-style: solid;
+  height: 100vh;
+  padding-top: 50px;
   text-align: center;
-}
-
-.button-row {
-  padding: 50px 30px 0px 30px;
 }
 
 p {
   color: rgb(0, 0, 0);
   text-align: left;
+}
+
+p.p-center {
+  text-align: center;
+}
+
+.button-row {
+  padding: 50px 30px 0 30px;
 }
 
 .btn {
@@ -38,26 +47,11 @@ p {
   padding: 18px 28px;
 }
 
-
 /* Sections */
-
-.section {
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-style: solid;
-  height: 100vh;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.section-top-left {
-  padding-top: 40px;
-}
 
 .button-contact {
   margin-top: 10px;
 }
-
 
 /* Home Section */
 
@@ -69,7 +63,6 @@ p {
   margin-top: -10px;
   text-align: center;
 }
-
 
 /* About Section */
 
@@ -86,7 +79,6 @@ p {
   align-text: center;
 }
 
-
 /* Portfolio Section */
 
 #Portfolio {
@@ -94,7 +86,6 @@ p {
   padding-top: 6vh;
   text-align: center;
 }
-
 
 /* Contact Section */
 
