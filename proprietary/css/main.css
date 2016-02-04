@@ -35,7 +35,8 @@ p.project-text {
   padding-top: 50px;
 }
 
-.sub-heading {
+h2.sub-heading {
+  color: rgb(255, 255, 255);
   margin-top: -10px;
   text-align: center;
 }
