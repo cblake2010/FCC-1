@@ -1,5 +1,25 @@
+var quotes = [
+    {
+        "text": "Akira",
+        "author": "Laine"
+    },
+    {
+        "text": "Harry",
+        "author": "Potter"
+    },
+    {
+        "text": "Sherlock",
+        "author": "Holmes"
+    },
+    {
+        "text": "Kristian"
+        "author": "Vos"
+    }
+];
+
+
 function genRndQuote() {
-  return "String";
+  return quotes[0].text;
 }
 
   $(document).ready(function() {
