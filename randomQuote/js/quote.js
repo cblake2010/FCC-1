@@ -1,6 +1,11 @@
+function genRndQuote() {
+  return "String";
+}
+
   $(document).ready(function() {
     $("#genQuote").click(function() {
-      $("#quote").html("<i>#target4</i>");
-
+      $("#quote").html(
+        genRndQuote()
+      );
     });
   });
