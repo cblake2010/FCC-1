@@ -1,7 +1,9 @@
+//Random Integer Generator For Later Use
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
+//Array of quote objects
 var quotes = [{
   "text": "When I die, I want to go peacefully like my grandfather died in his sleep. Not yelling and screaming like the passengers in his car.",
   "author": "Bob Monkhouse"
@@ -34,12 +36,13 @@ var quotes = [{
   "author": "Anonymous"
 }];
 
-
+//This function utilizes the getRandomInt() to pull a random index of the quote object array
 function genRndQuote() {
   var i = getRandomInt(0, quotes.length);
   return quotes[i];
 }
 
+//Function to display the data
 $(document).ready(function() {
   $("#genQuote").click(function() {
     var currentQuote = genRndQuote();
