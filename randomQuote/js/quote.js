@@ -1,3 +1,7 @@
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 var quotes = [
     {
         "text": "Akira",
@@ -12,14 +16,15 @@ var quotes = [
         "author": "Holmes"
     },
     {
-        "text": "Kristian"
+        "text": "Kristian",
         "author": "Vos"
     }
 ];
 
 
 function genRndQuote() {
-  return quotes[0].text;
+  var i = getRandomInt(0, quotes.length);
+  return quotes[i].text;
 }
 
   $(document).ready(function() {
