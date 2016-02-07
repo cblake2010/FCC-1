@@ -2,7 +2,6 @@ body {
   font-family: monospace;
   transition: background 1s linear;
 }
-
 h1 {
   color: white;
   font-size: 36px;
@@ -10,31 +9,27 @@ h1 {
   padding: 50px 0 50px 0;
   text-align: center
 }
-
-article {
-}
-
 nav {
   padding-top: 50px;
 }
-
+#article {
+  min-height: 150px;
+}
 .quote-text {
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
-
 .quote-author {
   font-style: italic;
   text-align: right;
 }
-
 .custom-button {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
-    border-radius: 10px;
-    color: white;
-    font-size: 22px;
-    line-height: normal;
-    padding: 18px 28px;
+  border-radius: 10px;
+  color: white;
+  font-size: 22px;
+  line-height: normal;
+  padding: 18px 28px;
 }

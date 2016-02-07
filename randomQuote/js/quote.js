@@ -68,10 +68,12 @@ $(document).ready(function() {
     quote = genRndItem(quotes, quote);
     $("#quote").html(quote.text);
     $("#author").html(quote.author);
-    $("#tweet-link").replaceWith( createTweeterButton(quote));
+    $("#tweet-link").replaceWith(createTweeterButton(quote));
     //Assign Background Color to button from current value of body background
     $(".custom-button").css("background-color", $("body").css("background-color"));
     //Generate New Body Background Color
-    setTimeout(function() { $("body").css("background-color", genRndItem(bgColors, $(".custom-button").css("background-color"))); }, 600);
+    setTimeout(function() {
+      $("body").css("background-color", genRndItem(bgColors, $(".custom-button").css("background-color")));
+    }, 600);
   });
 });
