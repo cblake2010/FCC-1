@@ -44,35 +44,29 @@ var bgColors = [
   "rgb(36, 255, 0)"
 ];
 
-//This function utilizes the getRandomInt() to pull a random index of the quote object array
-function genRndQuote() {
-  return quotes[getRandomInt(0, quotes.length)];
-}
-
-//This function generates a random background-color
-//function genRndBg() {
-//  var i = getRandomInt(0, bgColors.length);
-//  return bgColors[i];
-//}
-
-function genRndBg(bgColor) {
-  var newBgColor = bgColors[getRandomInt(0, bgColors.length)];
-  while (newBgColor === bgColor) {
-    newBgColor = bgColors[getRandomInt(0, bgColors.length)];
+//This function gets a random item from an array
+function genRndItem(arr, prevItem) {
+  var newItem = arr[getRandomInt(0, arr.length)];
+  while (newItem === prevItem) {
+    newItem = arr[getRandomInt(0, arr.length)];
   }
-
-  return newBgColor;
+  return newItem;
 }
 
-//Function to display the data
 $(document).ready(function() {
-  $("body").css("background-color", genRndBg());
-  $(".custom-button").css("background-color", genRndBg($("body").css("background-color")));
+  //Initial Quote
+  var quote = genRndItem(quotes);
+  //Assign Random Background Color
+  $("body").css("background-color", genRndItem(bgColors));
+  //Assign Another Background Color For Buttons
+  $(".custom-button").css("background-color", genRndItem(bgColors, $("body").css("background-color")));
   $("#genQuote").click(function() {
-    var currentQuote = genRndQuote();
-    $("#quote").html(currentQuote.text);
-    $("#author").html(currentQuote.author);
+    quote = genRndItem(quotes, quote);
+    $("#quote").html(quote.text);
+    $("#author").html(quote.author);
+    //Assign Background Color to button from current value of body background
     $(".custom-button").css("background-color", $("body").css("background-color"));
-    $("body").css("background-color", genRndBg($(".custom-button").css("background-color")));
+    //Generate New Body Background Color
+    $("body").css("background-color", genRndItem(bgColors, $(".custom-button").css("background-color")));
   });
 });
