@@ -4,7 +4,7 @@ body {
 
 h1 {
   color: white;
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 900;
   padding-bottom: 50px;
   text-align: center
@@ -17,12 +17,13 @@ nav {
   padding-top: 50px;
 }
 
-.p-center {
+.quote-text {
+  font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
 
-.p-right {
+.quote-author {
   font-style: italic;
   text-align: right;
 }
@@ -35,4 +36,5 @@ nav {
     font-size: 22px;
     line-height: normal;
     padding: 18px 28px;
+    transition: background 1s linear;
 }
