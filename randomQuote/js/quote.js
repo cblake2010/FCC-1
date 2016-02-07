@@ -53,6 +53,10 @@ function genRndItem(arr, prevItem) {
   return newItem;
 }
 
+function createTweeterButton(quote) {
+  return "<a href=\"http://twitter.com/home?status=" + quote.text + " -- " + quote.author + "id=\"tweet-link\"><button id=\"tweetQuote\" class=\"custom-button\">Tweet</button></a>";
+}
+
 $(document).ready(function() {
   //Initial Quote
   var quote = genRndItem(quotes);
@@ -64,6 +68,7 @@ $(document).ready(function() {
     quote = genRndItem(quotes, quote);
     $("#quote").html(quote.text);
     $("#author").html(quote.author);
+    $("#tweet-link").replaceWith( createTweeterButton(quote));
     //Assign Background Color to button from current value of body background
     $(".custom-button").css("background-color", $("body").css("background-color"));
     //Generate New Body Background Color
