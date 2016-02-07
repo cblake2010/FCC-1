@@ -14,8 +14,7 @@ article {
 }
 
 nav {
-  margin-top: 40px;
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .p-center {
@@ -26,4 +25,9 @@ nav {
 .p-right {
   font-style: italic;
   text-align: right;
+}
+
+.custom-button {
+  margin: 30px;
+  width: auto;
 }
