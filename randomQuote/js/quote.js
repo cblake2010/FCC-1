@@ -67,6 +67,6 @@ $(document).ready(function() {
     //Assign Background Color to button from current value of body background
     $(".custom-button").css("background-color", $("body").css("background-color"));
     //Generate New Body Background Color
-    setTimeout(function() { $("body").css("background-color", genRndItem(bgColors, $(".custom-button").css("background-color"))); }, 200);
+    setTimeout(function() { $("body").css("background-color", genRndItem(bgColors, $(".custom-button").css("background-color"))); }, 500);
   });
 });
