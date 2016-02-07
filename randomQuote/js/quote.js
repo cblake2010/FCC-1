@@ -51,18 +51,32 @@ function genRndQuote() {
 }
 
 //This function generates a random background-color
-function genRndBg() {
-  var i = getRandomInt(0, bgColors.length);
-  return bgColors[i];
+//function genRndBg() {
+//  var i = getRandomInt(0, bgColors.length);
+//  return bgColors[i];
+//}
+
+function genRndBg(bgColor) {
+  var index;
+  var newBgColor;
+  while (bgColor !== bgColors[index]) {
+    index = getRandomInt(0, bgColors.length);
+    newBgColor = bgColors[index];
+  }
+
+  return newBgColor;
 }
 
 //Function to display the data
 $(document).ready(function() {
-  $("body").css("background-color", genRndBg());
+  var bgColor = genRndBg();
+  $("body").css("background-color", bgColor);
+  $(".custom-button").css("background-color", genRndBg(bgColor));
   $("#genQuote").click(function() {
     var currentQuote = genRndQuote();
     $("#quote").html(currentQuote.text);
     $("#author").html(currentQuote.author);
+    $(".custom-button").css("background-color", bgColor);
     $("body").css("background-color", genRndBg());
   });
 });

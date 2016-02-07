@@ -28,9 +28,10 @@ nav {
 }
 
 .custom-button {
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-    border-radius: 4px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: white;
     font-size: 22px;
     line-height: normal;
     padding: 18px 28px;
