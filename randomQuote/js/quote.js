@@ -57,9 +57,9 @@ function genRndQuote() {
 //}
 
 function genRndBg(bgColor) {
-  var index = 1;
+  var index;
   var newBgColor;
-  while (bgColor !== bgColors[index]) {
+  while (newBgColor !== bgColor) {
     index = getRandomInt(0, bgColors.length);
     newBgColor = bgColors[index];
   }
