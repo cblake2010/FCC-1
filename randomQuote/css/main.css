@@ -12,10 +12,6 @@ h1 {
 nav {
   padding-top: 50px;
 }
-#full-quote {
-  min-height: 300px;
-  vertical-align: middle;
-}
 .quote-text {
   font-size: 24px;
   font-weight: bold;
