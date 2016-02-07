@@ -66,15 +66,13 @@ function genRndBg(bgColor) {
 
 //Function to display the data
 $(document).ready(function() {
-  var bgColor = genRndBg();
-  $("body").css("background-color", bgColor);
-  $(".custom-button").css("background-color", genRndBg(bgColor));
+  $("body").css("background-color", genRndBg());
+  $(".custom-button").css("background-color", genRndBg($("body").css("background-color")));
   $("#genQuote").click(function() {
     var currentQuote = genRndQuote();
     $("#quote").html(currentQuote.text);
     $("#author").html(currentQuote.author);
-    $(".custom-button").css("background-color", bgColor);
-    bgColor = genRndBg($("body").css("background-color"));
-    $("body").css("background-color", genRndBg(bgColor));
+    $(".custom-button").css("background-color", $("body").css("background-color"));
+    $("body").css("background-color", genRndBg($(".custom-button").css("background-color")));
   });
 });
