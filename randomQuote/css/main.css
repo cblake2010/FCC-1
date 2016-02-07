@@ -1,10 +1,19 @@
 body {
+  transition: background 1s linear;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center
 }
 
 .p-center {
+  font-weight: bold;
   text-align: center;
 }
 
 .p-right {
+  font-style: italic;
   text-align: right;
 }
