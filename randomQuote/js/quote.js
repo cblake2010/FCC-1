@@ -36,18 +36,30 @@ var quotes = [{
   "author": "Anonymous"
 }];
 
+var bgColors = [
+  "rgb(0, 171, 255)",
+  "rgb(255, 0, 199)",
+  "rgb(177, 0, 255)"
+];
+
 //This function utilizes the getRandomInt() to pull a random index of the quote object array
 function genRndQuote() {
   var i = getRandomInt(0, quotes.length);
   return quotes[i];
 }
 
+function genRndBg() {
+  var i = getRandomInt(0, bgColors.length);
+  return bgColors[i];
+}
+
 //Function to display the data
 $(document).ready(function() {
+  $("body").css("background-color", genRndBg());
   $("#genQuote").click(function() {
     var currentQuote = genRndQuote();
     $("#quote").html(currentQuote.text);
     $("#author").html(currentQuote.author);
-    $("body").css("background-color", "rgb(0, 171, 255)");
+    $("body").css("background-color", genRndBg());
   });
 });
