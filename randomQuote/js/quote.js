@@ -46,8 +46,7 @@ var bgColors = [
 
 //This function utilizes the getRandomInt() to pull a random index of the quote object array
 function genRndQuote() {
-  var i = getRandomInt(0, quotes.length);
-  return quotes[i];
+  return quotes[getRandomInt(0, quotes.length)];
 }
 
 //This function generates a random background-color
@@ -57,11 +56,9 @@ function genRndQuote() {
 //}
 
 function genRndBg(bgColor) {
-  var index;
-  var newBgColor;
+  var newBgColor = bgColors[getRandomInt(0, bgColors.length)];
   while (newBgColor === bgColor) {
-    index = getRandomInt(0, bgColors.length);
-    newBgColor = bgColors[index];
+    newBgColor = bgColors[getRandomInt(0, bgColors.length)];
   }
 
   return newBgColor;
