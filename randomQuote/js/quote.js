@@ -54,7 +54,7 @@ function genRndItem(arr, prevItem) {
 }
 
 function createTweeterButton(quote) {
-  return "<a href=\"http://twitter.com/home?status=" + quote.text + " -- " + quote.author + "id=\"tweet-link\"><button id=\"tweetQuote\" class=\"custom-button\">Tweet</button></a>";
+  return "<a href=\"http://twitter.com/home?status=" + quote.text + " -- " + quote.author + "\" id=\"tweet-link\"><button id=\"tweetQuote\" class=\"custom-button\">Tweet</button></a>";
 }
 
 $(document).ready(function() {
