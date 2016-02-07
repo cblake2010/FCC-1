@@ -74,7 +74,7 @@ $(document).ready(function() {
     $("#quote").html(currentQuote.text);
     $("#author").html(currentQuote.author);
     $(".custom-button").css("background-color", bgColor);
-    bgColor = genRndBg(bgColor);
+    bgColor = genRndBg($("body").css("background-color"));
     $("body").css("background-color", genRndBg(bgColor));
   });
 });
