@@ -65,7 +65,7 @@ $(document).ready(function() {
     $("#quote").html(quote.text);
     $("#author").html(quote.author);
     //Assign Background Color to button from current value of body background
-    setTimeout($(".custom-button").css("background-color", $("body").css("background-color")),200);
+    setTimeout(function() { $(".custom-button").css("background-color", $("body").css("background-color")); } ,200);
     //Generate New Body Background Color
     $("body").css("background-color", genRndItem(bgColors, $(".custom-button").css("background-color")));
   });
