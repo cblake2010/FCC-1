@@ -28,6 +28,10 @@ nav {
 }
 
 .custom-button {
-  margin: 30px;
-  width: auto;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-size: 22px;
+    line-height: normal;
+    padding: 18px 28px;
 }
