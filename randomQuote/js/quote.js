@@ -48,5 +48,6 @@ $(document).ready(function() {
     var currentQuote = genRndQuote();
     $("#quote").html(currentQuote.text);
     $("#author").html(currentQuote.author);
+    $("body").css("background-color", "rgb(0, 171, 255)");
   });
 });

@@ -199,41 +199,41 @@ function destroyer() {
   for (x = 1; x < arguments.length; x++) {
     restOfArray.push(arguments[x]);
   }
-//Filter Results based on value from firstArray contained in restOfArray
-//And indexOf function returns a -1 when value is not contained.
+  //Filter Results based on value from firstArray contained in restOfArray
+  //And indexOf function returns a -1 when value is not contained.
   lastArray = firstArray.filter(function(value) {
     return restOfArray.indexOf(value) < 0;
   });
   return lastArray;
 }
 
-var arr = [1,2,3,4];
+var arr = [1, 2, 3, 4];
 
 var singleVal = arr.reduce(function(previousVal, currentVal) {
   console.log("Previous Val=" + previousVal + "  Current Val=" + currentVal)
   return previousVal + currentVal;
-},4);
+}, 4);
 
-console.log("singleVal= "+ singleVal);
+console.log("singleVal= " + singleVal);
 
-var arr = [1,2,3,4];
+var arr = [1, 2, 3, 4];
 
 var singleVal = arr.reduce(function(previousVal, currentVal) {
   console.log("Previous Val=" + previousVal + "  Current Val=" + currentVal)
   return previousVal + currentVal;
-},0);
+}, 0);
 
-console.log("singleVal= "+ singleVal);
+console.log("singleVal= " + singleVal);
 
-console.log("singleVal= "+ singleVal);
+console.log("singleVal= " + singleVal);
 
-var arr = [1,2,3,4];
+var arr = [1, 2, 3, 4];
 
 var singleVal = arr.reduce(function(previousVal, currentVal) {
   console.log("Previous Val=" + previousVal + "  Current Val=" + currentVal)
   return previousVal + currentVal;
 });
 
-console.log("singleVal= "+ singleVal);
+console.log("singleVal= " + singleVal);
 
 console.log(JSON.parse('true'));
