@@ -3,20 +3,21 @@ function updateDisplay(str) {
 }
 
 function buttonPress(arr, str) {
-  switch (str) {
+  arr.push(str);
+  switch (arr[arr.length-1]) {
     case "ac":
       updateDisplay("0.0");
       arr = [];
       break;
     case "c":
-      arr.splice(arr.length - 1, 1);
+      arr.splice(arr.length - 1, 2);
       break;
     case "=":
       updateDisplay(eval(arr.join("")));
       arr = [];
       break;
     default:
-      updateDisplay(arr.push(str).join(""));
+      updateDisplay(arr.join(""));
   }
   return arr;
 }
