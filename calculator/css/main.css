@@ -6,6 +6,10 @@ h1 {
   text-align: center;
 }
 
+.calculator {
+  text-align:center;
+}
+
 .calc-button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -23,5 +27,5 @@ h1 {
 }
 
 #equal-button {
-  width:100px;
+  width:108px;
 }
