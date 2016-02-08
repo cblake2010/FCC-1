@@ -4,6 +4,7 @@ function updateDisplay(str) {
 
 function buttonPress(arr, str) {
   arr.push(str);
+  console.log(str);
   switch (str) {
     case "AC":
       updateDisplay("0.0");
