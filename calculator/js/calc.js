@@ -1,5 +1,5 @@
 function updateDisplay(arr) {
-  $("#calc-display").html(arr.split());
+  $("#calc-display").html(arr.join());
 }
 
 function buttonPress(arr, str) {
