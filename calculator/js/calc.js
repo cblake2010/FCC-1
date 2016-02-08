@@ -1,4 +1,5 @@
 function updateDisplay(str) {
+  if (str==="") {str="0.0";}
   $("#calc-display").html(str);
 }
 
