@@ -15,6 +15,7 @@ function buttonPress(arr, str) {
       updateDisplay(arr);
       break;
     case "Calc":
+      console.log("RunningCalc");
       updateDisplay(eval(arr.join("")));
       arr = [];
       break;
