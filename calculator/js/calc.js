@@ -3,6 +3,7 @@ function updateDisplay(str) {
 }
 
 function buttonPress(arr, str) {
+  arr.push(str);
   switch (str) {
     case "AC":
       updateDisplay("0.0");
