@@ -3,8 +3,6 @@ function updateDisplay(str) {
 }
 
 function buttonPress(arr, str) {
-  arr.push(str);
-  console.log(str);
   switch (str) {
     case "AC":
       updateDisplay("0.0");
@@ -15,11 +13,11 @@ function buttonPress(arr, str) {
       updateDisplay(arr);
       break;
     case "Calc":
-      console.log(arr.join(""));
       updateDisplay(eval(arr.join("")));
       arr = [];
       break;
     default:
+      arr.push(str);
       updateDisplay(arr.join(""));
   }
   return arr;
