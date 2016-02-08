@@ -13,7 +13,7 @@ function buttonPress(arr, str) {
       arr.splice(arr.length - 1, 2);
       break;
     case "=":
-      updateDisplay(eval(arr.join("")));
+      updateDisplay(eval(  arr.splice(arr.length - 1, 2).join("")));
       arr = [];
       break;
     default:
