@@ -40,6 +40,7 @@ $(document).ready(function() {
   $("#mult-button").click(function() {calcArr = buttonPress(calcArr, "*");});
   $("#plus-button").click(function() {calcArr = buttonPress(calcArr, "+");});
   $("#min-button").click(function() {calcArr = buttonPress(calcArr, "-");});
+  $("#dec-button").click(function() {calcArr = buttonPress(calcArr, ".");});
   $("#perc-button").click(function() {calcArr = buttonPress(calcArr, "%");});
   $("#c-button").click(function() {calcArr = buttonPress(calcArr, "c");});
   $("#ac-button").click(function() {calcArr = resetDisplay();});
