@@ -1,15 +1,14 @@
-function updateDisplay(arr) {
-  $("#calc-display").html(arr.join());
-}
-
-function buttonPress(arr, str) {
-  arr.push(str);
-  updateDisplay(arr);
-  return arr;
-}
-
 $(document).ready(function() {
   var calcArr = [];
+  function updateDisplay(arr) {
+    $("#calc-display").html(arr.join(""));
+  }
+
+  function buttonPress(arr, str) {
+    arr.push(str);
+    updateDisplay(arr);
+    return arr;
+  }
   $("#0-button").click(function() {calcArr = buttonPress(calcArr, "0");});
   $("#1-button").click(function() {calcArr = buttonPress(calcArr, "1");});
   $("#2-button").click(function() {calcArr = buttonPress(calcArr, "2");});
