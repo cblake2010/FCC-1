@@ -1,0 +1,21 @@
+$(document).ready(function() {
+  var calcArr = [];
+  $("#0-button").click(function() {calcArr.push("0")});
+  $("#1-button").click(function() {calcArr.push("1")});
+  $("#2-button").click(function() {calcArr.push("2")});
+  $("#3-button").click(function() {calcArr.push("3")});
+  $("#4-button").click(function() {calcArr.push("4")});
+  $("#5-button").click(function() {calcArr.push("5")});
+  $("#6-button").click(function() {calcArr.push("6")});
+  $("#7-button").click(function() {calcArr.push("7")});
+  $("#8-button").click(function() {calcArr.push("8")});
+  $("#9-button").click(function() {calcArr.push("9")});
+  $("#div-button").click(function() {calcArr.push("/")});
+  $("#mult-button").click(function() {calcArr.push("*")});
+  $("#plus-button").click(function() {calcArr.push("+")});
+  $("#min-button").click(function() {calcArr.push("-")});
+  $("#perc-button").click(function() {calcArr.push("%")});
+  $("#c-button").click(function() {});
+  $("#ac-button").click(function() {});
+  $("#equal-button").click(function() {});
+});
