@@ -26,7 +26,7 @@ function equalPress(arr) {
 $(document).ready(function() {
   var calcArr = [];
 
-  $("#0-button").click(function() {calcArr = buttonPress(calcArr, "0");});
+  $("calc-button").click(function() {calcArr = buttonPress(calcArr, $(this).html);});
   $("#1-button").click(function() {calcArr = buttonPress(calcArr, "1");});
   $("#2-button").click(function() {calcArr = buttonPress(calcArr, "2");});
   $("#3-button").click(function() {calcArr = buttonPress(calcArr, "3");});
