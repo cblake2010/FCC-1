@@ -5,14 +5,14 @@ function updateDisplay(str) {
 function buttonPress(arr, str) {
   arr.push(str);
   switch (arr[arr.length-1]) {
-    case "ac":
+    case "AC":
       updateDisplay("0.0");
       arr = [];
       break;
-    case "c":
+    case "C":
       arr.splice(arr.length - 1, 2);
       break;
-    case "=":
+    case "Calc":
       updateDisplay(eval(  arr.splice(arr.length - 1, 2).join("")));
       arr = [];
       break;
