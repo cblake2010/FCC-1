@@ -237,3 +237,6 @@ var singleVal = arr.reduce(function(previousVal, currentVal) {
 console.log("singleVal= " + singleVal);
 
 console.log(JSON.parse('true'));
+
+str = "1+2*10"
+console.log(eval(str));

@@ -3,7 +3,7 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min)) + min;
 }
 
-//This function gets a random item from an array
+//This function gets a random item from an array, if previous item is provided, it will not repeat
 function genRndItem(arr, prevItem) {
   var newItem = arr[getRandomInt(0, arr.length)];
   while (newItem === prevItem) {

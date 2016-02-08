@@ -1,0 +1,13 @@
+.calc-button {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  background-color: rgb(161, 161, 161);
+  border-radius: 4px;
+  border-color: black;
+  border-style:solid;
+  border-width:thin;
+  color: black;
+  font-size: 12px;
+  line-height: normal;
+  padding: 2px;
+}
