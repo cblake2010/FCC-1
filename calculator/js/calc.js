@@ -2,9 +2,9 @@ function updateDisplay(str) {
   $("#calc-display").html(str);
 }
 
-function resetDisplay(arr) {
+function resetDisplay() {
   updateDisplay("0.0");
-  return arr.clear();
+  return [];
 }
 
 function buttonPress(arr, str) {
@@ -20,7 +20,7 @@ function buttonPress(arr, str) {
 
 function equalPress(arr) {
   updateDisplay(eval(arr.join("")));
-  return arr.clear();
+  return [];
 }
 
 $(document).ready(function() {
