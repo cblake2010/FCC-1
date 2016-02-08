@@ -11,8 +11,9 @@ function buttonPress(arr, str) {
       break;
     case "C":
       arr.splice(arr.length - 1, 2);
+      updateDisplay(arr);
       break;
-    case "Calc":
+    case "Solution":
       updateDisplay(eval(  arr.splice(arr.length - 1, 2).join("")));
       arr = [];
       break;
