@@ -3,18 +3,17 @@ function updateDisplay(str) {
 }
 
 function buttonPress(arr, str) {
-  arr.push(str);
-  switch (arr[arr.length-1]) {
+  switch (str) {
     case "AC":
       updateDisplay("0.0");
       arr = [];
       break;
     case "C":
-      arr.splice(arr.length - 1, 2);
+      arr.splice(arr.length - 1, 1);
       updateDisplay(arr);
       break;
-    case "=":
-      updateDisplay(eval(  arr.splice(arr.length - 1, 1).join("")));
+    case "Calc":
+      updateDisplay(eval(arr.join("")));
       arr = [];
       break;
     default:
