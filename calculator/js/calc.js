@@ -56,7 +56,7 @@ $(document).ready(function() {
     $("#calc-display").html(this.calcDisplay);
     if (this.calcArr[this.calcArr.length - 1] === ".") {
       this.atDecimal = true;
-    } else {
+    } else if (isOperator(this.calcArr[this.calcArr.length - 1])) {
       this.atDecimal = false;
     }
   }
