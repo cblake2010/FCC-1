@@ -24,6 +24,7 @@ function buttonPress(calculator, str) {
 $(document).ready(function() {
   var bool;
   String.prototype.isOperator = function() {
+    console.log(this);
     switch (this) {
       case "*":
       case "/":
@@ -72,8 +73,6 @@ $(document).ready(function() {
   calculatorObj.prototype.appendValue = function(str) {
     //If the first element of the array == the solution
     //We are at answer status and str ! operator
-    console.log(str);
-    console.log(str.isOperator());
     if ((this.calcArr[0] === this.solution) && (!str.isOperator())) {
       console.log("All Clear");
       this.allClear();
