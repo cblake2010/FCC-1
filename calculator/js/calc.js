@@ -36,7 +36,7 @@ function buttonPress(calculator, str) {
 
 $(document).ready(function() {
   //Create Calculator Object
-  function calculatorObj(calcArr, decStatus, opStatus, ansStatus) {
+  function calculatorObj(arr, decStatus, opStatus, ansStatus) {
     this.calcArr = arr;
     this.atDecimal = decStatus;
     this.atOperator = opStatus;
