@@ -36,7 +36,7 @@ $(document).ready(function() {
       default:
         bool = false;
     }
-    return this.bool;
+    return bool;
 
   };
   //Create Calculator Object
