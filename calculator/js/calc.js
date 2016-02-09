@@ -37,10 +37,11 @@ $(document).ready(function() {
 
 
   //Create Calculator Object
-  function calculatorObj(arr, str, bool) {
+  function calculatorObj(arr, str, bool, sol) {
     this.calcArr = arr;
     this.calcDisplay = str;
     this.atDecimal = bool;
+    this.solution = sol;
   };
 
   calculatorObj.prototype.updateDisplay = function() {
@@ -55,6 +56,7 @@ $(document).ready(function() {
   calculatorObj.prototype.allClear = function() {
     this.calcArr = [];
     this.calcDisplay = "0.0";
+    this.solution = "";
     this.atDecimal = false;
     this.updateDisplay();
     return this;
