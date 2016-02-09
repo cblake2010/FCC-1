@@ -21,24 +21,25 @@ function buttonPress(calculator, str) {
   return calculator;
 }
 
+function isOperator(str) {
+  var bool;
+  switch (str) {
+    case "*":
+    case "/":
+    case "+":
+    case "-":
+      bool = true;
+      break;
+    default:
+      bool = false;
+  }
+  return bool;
+
+};
+
 $(document).ready(function() {
 
-  String.prototype.isOperator = function() {
-    var bool;
-    console.log(this);
-    switch (this) {
-      case "*":
-      case "/":
-      case "+":
-      case "-":
-        bool = true;
-        break;
-      default:
-        bool = false;
-    }
-    return bool;
 
-  };
   //Create Calculator Object
   function calculatorObj(arr, str, sol) {
     this.calcArr = arr;
@@ -76,7 +77,7 @@ $(document).ready(function() {
     //We are at answer status and str ! operator
     console.log(str);
     console.log(str.isOperator());
-    if ((this.calcArr[this.calcArr.length-1] === this.solution) && (!str.isOperator())) {
+    if ((this.calcArr[this.calcArr.length-1] === this.solution) && (!isOperator(str))) {
       console.log("All Clear");
       this.allClear();
     }
