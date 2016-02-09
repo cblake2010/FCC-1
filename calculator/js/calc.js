@@ -81,7 +81,7 @@ $(document).ready(function() {
     //Clear the solution after use.
     this.solution = "";
 
-    console.log(this.calcArr.split(isOperator()));
+    console.log(this.calcArr.join("").split(isOperator()));
     //Push Next Entered Value to Array and Display it
     this.calcArr.push(str);
     this.calcDisplay = this.calcArr.join(" ");
