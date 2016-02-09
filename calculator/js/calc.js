@@ -79,21 +79,21 @@ $(document).ready(function() {
     this.calcArr.push(str);
     this.calcDisplay = this.calcArr.join(" ");
     this.updateDisplay();
+    return this;
   }
-  return this;
-}
 
-calculatorObj.prototype.calc = function() {
-  this.solution = eval(calculator.calcArr.join(""));
-  this.calcDisplay = this.solution;
-  calculator.calcArr = [];
-  calculator.calcArr.push(this.solution);
-  return this;
-}
+  calculatorObj.prototype.calc = function() {
+    this.solution = eval(calculator.calcArr.join(""));
+    this.calcDisplay = this.solution;
+    calculator.calcArr = [];
+    calculator.calcArr.push(this.solution);
+    return this;
+  }
 
-calculator = new calculatorObj(); calculator.allClear();
+  calculator = new calculatorObj();
+  calculator.allClear();
 
-$(".calc-button").click(function() {
-  calculator = buttonPress(calculator, $(this).html());
-});
+  $(".calc-button").click(function() {
+    calculator = buttonPress(calculator, $(this).html());
+  });
 });
