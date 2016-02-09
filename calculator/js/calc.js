@@ -83,8 +83,10 @@ $(document).ready(function() {
   }
 
   calculatorObj.prototype.appendValue = function(str) {
+    if (str !== "") {
+      this.calcArr.push(str);  
+    }
 
-    this.calcArr.push(str);
     this.calcDisplay = this.calcArr.join(" ");
     //Clear the solution after use.
     this.solution = "";
