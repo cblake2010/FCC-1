@@ -72,11 +72,13 @@ $(document).ready(function() {
   calculatorObj.prototype.appendValue = function(str) {
     //If the first element of the array == the solution
     //We are at answer status and str ! operator
-    if ((this.calcArr[this.calcArr.length-1] === this.solution) && (!str.isOperator())) {
+    if ((this.calcArr[0] === this.solution) && (!str.isOperator())) {
       console.log("All Clear");
       this.allClear();
     }
-
+    //Clear the solution after use.
+    this.solution = "";
+    //Push Next Entered Value to Array and Display it
     this.calcArr.push(str);
     this.calcDisplay = this.calcArr.join(" ");
     this.updateDisplay();
