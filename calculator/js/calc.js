@@ -1,10 +1,17 @@
+//Possible To Do
+//Create Status Obj | numHasDecimal = Bool , atOperator = Bool , atAnswer = Bool
+
 function updateDisplay(str) {
   $("#calc-display").html(str);
+  return str;
 }
 
-function buttonPress(arr, str) {
+function buttonPress(arr, str, calcStatus) {
   switch (str) {
     case "AC":
+      calcStatus.atAnswer = false;
+      calcStatus.atOperator = false;
+      calcStatus.hasDecimal = false;
       updateDisplay("0.0");
       arr = [];
       break;
@@ -14,8 +21,9 @@ function buttonPress(arr, str) {
       updateDisplay(str);
       break;
     case "Calc":
-      updateDisplay(eval(arr.join("")));
+      str = updateDisplay(eval(arr.join("")));
       arr = [];
+      arr.push(str);
       break;
     case ".":
       if (arr.indexOf(str) < 0 ) {arr.push(str);}
@@ -30,8 +38,13 @@ function buttonPress(arr, str) {
 
 $(document).ready(function() {
   var calcArr = [];
+  var calcStatus = {
+    atAnswer: false,
+    hasDecimal: false,
+    atOperator: false
+  };
 
   $(".calc-button").click(function() {
-    calcArr = buttonPress(calcArr, $(this).html());
+    calcArr = buttonPress(calcArr, $(this).html(),calcStatus);
   });
 });
