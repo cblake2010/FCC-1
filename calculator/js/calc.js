@@ -17,6 +17,10 @@ function buttonPress(arr, str) {
       updateDisplay(eval(arr.join("")));
       arr = [];
       break;
+    case ".":
+      if (arr.indexOf(str) < 0 ) {arr.push(str);}
+      updateDisplay(arr.join(""));
+      break;
     default:
       arr.push(str);
       updateDisplay(arr.join(""));
