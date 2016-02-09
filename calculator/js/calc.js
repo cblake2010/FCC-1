@@ -26,15 +26,6 @@ function buttonPress(calculator, str) {
       calculator.calc();
       break;
     default:
-      //If the first element of the array == the solution
-      //We are at answer status and str ! operator
-      if ((calculator.calcArr[calculator.calcArr.length - 1] === calculator.solution) && (!isOperator(str))) {
-        calculator.allClear();
-      }  else if (isOperator(str) && isOperator(calculator.calcArr[calculator.calcArr.length - 1])) {
-        calculator.calcArr.splice(calculator.calcArr[calculator.length - 1, 1])
-      } else if (str === "." && calculator.atDecimal === true) {
-        str = "";
-      }
       calculator.appendValue(str);
   }
   return calculator;
@@ -83,13 +74,23 @@ $(document).ready(function() {
   }
 
   calculatorObj.prototype.appendValue = function(str) {
-    if (str !== "") {
-      this.calcArr.push(str);  
+
+    //If the first element of the array == the solution
+    //We are at answer status and str ! operator
+    if ((this.calcArr[this.calcArr.length - 1] === this.solution) && (!isOperator(str))) {
+      this.allClear();
+      this.calcArr.push(str);
+    } else if (isOperator(str) && isOperator(this.calcArr[this.calcArr.length - 1])) {
+      this.calcArr.splice(this.calcArr[this.length - 1, 1])
+      this.calcArr.push(str);
+    } else if (str === "." && this.atDecimal === true) {
+      str = "";
     }
 
-    this.calcDisplay = this.calcArr.join(" ");
     //Clear the solution after use.
     this.solution = "";
+
+    this.calcDisplay = this.calcArr.join(" ");
 
     //Push Next Entered Value to Array and Display it
     this.updateDisplay();
