@@ -5,6 +5,7 @@ function isOperator(str) {
     case "/":
     case "+":
     case "-":
+    case "%":
       bool = true;
       break;
     default:
@@ -31,10 +32,7 @@ function buttonPress(calculator, str) {
   return calculator;
 }
 
-
-
 $(document).ready(function() {
-
 
   //Create Calculator Object
   function calculatorObj(arr, str, bool, sol) {
@@ -82,11 +80,13 @@ $(document).ready(function() {
     if ((this.calcArr[this.calcArr.length - 1] === this.solution) && (!isOperator(str))) {
       this.allClear();
     } else if (isOperator(str) && isOperator(this.calcArr[this.calcArr.length - 1])) {
-      this.calcArr.splice(this.calcArr.length - 1,1)
+      this.calcArr.splice(this.calcArr.length - 1, 1)
     } else if (str === "." && this.atDecimal === true) {
       str = "";
     }
-    if (str !== "") {this.calcArr.push(str);}
+    if (str !== "") {
+      this.calcArr.push(str);
+    }
     this.calcDisplay = this.calcArr.join(" ");
 
     //Push Next Entered Value to Array and Display it
