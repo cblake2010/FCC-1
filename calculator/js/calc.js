@@ -22,8 +22,10 @@ function buttonPress(calculator, str) {
 }
 
 $(document).ready(function() {
-  var bool;
+
   String.prototype.isOperator = function() {
+    var bool;
+
     switch (this) {
       case "*":
       case "/":
@@ -34,7 +36,7 @@ $(document).ready(function() {
       default:
         bool = false;
     }
-    return bool;
+    return this.bool;
 
   };
   //Create Calculator Object
