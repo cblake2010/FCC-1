@@ -73,6 +73,7 @@ $(document).ready(function() {
     //If the first element of the array == the solution
     //We are at answer status and str ! operator
     console.log(str);
+    console.log(str.isOperator());
     if ((this.calcArr[0] === this.solution) && (!str.isOperator())) {
       console.log("All Clear");
       this.allClear();
