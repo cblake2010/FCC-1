@@ -6,7 +6,7 @@ function updateDisplay(str) {
   return str;
 }
 
-function buttonPress(calculator.calcArr, str, calcStatus) {
+function buttonPress(calculator, str) {
   switch (str) {
     case "AC":
       calculator.allClear();
@@ -35,6 +35,7 @@ function buttonPress(calculator.calcArr, str, calcStatus) {
 }
 
 $(document).ready(function() {
+  //Create Calculator Object
   function calculator(calcArr, atDecimal, atOperator, atAnswer) {
     this.calcArr = [];
     this.allCleer();
