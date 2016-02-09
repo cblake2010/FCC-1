@@ -72,7 +72,7 @@ $(document).ready(function() {
   calculatorObj.prototype.appendValue = function(str) {
     //If the first element of the array == the solution
     //We are at answer status and str ! operator
-    if ((this.calcArr[0] == this.solution) && (!str.isOperator())) {
+    if ((this.calcArr[0] === this.solution) && (!str.isOperator())) {
       console.log("All Clear");
       this.allClear();
     }
@@ -84,10 +84,10 @@ $(document).ready(function() {
   }
 
   calculatorObj.prototype.calc = function() {
-    this.solution = eval(calculator.calcArr.join(""));
+    this.solution = eval(this.calcArr.join(""));
     this.calcDisplay = this.solution;
-    calculator.calcArr = [];
-    calculator.calcArr.push(this.solution);
+    this.calcArr = [];
+    this.calcArr.push(this.solution);
     this.updateDisplay();
     return this;
   }
