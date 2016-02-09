@@ -41,18 +41,20 @@ $(document).ready(function() {
     this.atDecimal = decStatus;
     this.atOperator = opStatus;
     this.atAnswer = ansStatus;
-    function allClear() {
-      this.calcArr = [];
-      this.atDecimal = false;
-      this.atOperator = false;
-      this.atAnswer = false;
-      console.log("allClear");
-    }
   };
 
+  calculatorObj.prototype.allClear = function() {
+    this.calcArr = [];
+    this.atDecimal = false;
+    this.atOperator = false;
+    this.atAnswer = false;
+    return this;
+  }
+
+  calculator = new calculatorObj();
+  calculator.allClear();
+
   $(".calc-button").click(function() {
-    calculator = new calculatorObj();
-    calculator.allClear();
     calculator = buttonPress(calculator, $(this).html());
   });
 });
