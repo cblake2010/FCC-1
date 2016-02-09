@@ -26,11 +26,8 @@ $(document).ready(function() {
   String.prototype.isOperator = function() {
     switch (this) {
       case "*":
-        ,
       case "/":
-        ,
       case "+":
-        ,
       case "-":
         bool = true;
         break;
