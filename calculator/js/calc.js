@@ -1,5 +1,4 @@
 function updateDisplay(str) {
-  if (str==="") {str="0.0";}
   $("#calc-display").html(str);
 }
 
@@ -11,6 +10,7 @@ function buttonPress(arr, str) {
       break;
     case "C":
       arr.splice(arr.length - 1, 1);
+      if (!arr[0]) {str="0.0";}
       updateDisplay(arr);
       break;
     case "Calc":
