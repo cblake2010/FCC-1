@@ -89,13 +89,12 @@ $(document).ready(function() {
       str = "";
     }
 
-    //Clear the solution after use.
-    this.solution = "";
-
     this.calcDisplay = this.calcArr.join(" ");
 
     //Push Next Entered Value to Array and Display it
     this.updateDisplay();
+    //Clear the solution after use.
+    this.solution = "";
     return this;
   }
 
