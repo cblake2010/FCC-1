@@ -1,4 +1,4 @@
-//Possible To Do
+//Todo
 //Create Status Obj | numHasDecimal = Bool , atOperator = Bool , atAnswer = Bool
 
 function updateDisplay(str) {
