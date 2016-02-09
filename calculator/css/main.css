@@ -8,6 +8,12 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  color: rgb(255,255,255);
+  font-style: italic;
+  text-align: center;
+}
+
 .calculator {
   background-color: rgb(60, 60, 60);
   border-radius: 10px;
