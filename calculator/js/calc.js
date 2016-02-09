@@ -81,14 +81,12 @@ $(document).ready(function() {
     //We are at answer status and str ! operator
     if ((this.calcArr[this.calcArr.length - 1] === this.solution) && (!isOperator(str))) {
       this.allClear();
-      this.calcArr.push(str);
     } else if (isOperator(str) && isOperator(this.calcArr[this.calcArr.length - 1])) {
       this.calcArr.splice(this.calcArr[this.length - 1, 1])
-      this.calcArr.push(str);
-    } else if (str === "." && this.atDecimal === true) {
+    } else if !(str === "." && this.atDecimal === true) {
       str = "";
     }
-
+    if (str !== "") {this.calcArr.push(str);}
     this.calcDisplay = this.calcArr.join(" ");
 
     //Push Next Entered Value to Array and Display it
