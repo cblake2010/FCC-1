@@ -75,8 +75,6 @@ $(document).ready(function() {
   calculatorObj.prototype.appendValue = function(str) {
     //If the first element of the array == the solution
     //We are at answer status and str ! operator
-    console.log(str);
-    console.log(str.isOperator());
     if ((this.calcArr[this.calcArr.length-1] === this.solution) && (!isOperator(str))) {
       console.log("All Clear");
       this.allClear();
