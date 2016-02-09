@@ -25,7 +25,7 @@ $(document).ready(function() {
 
   String.prototype.isOperator = function() {
     var bool;
-    console.log("Running isOperator");
+    console.log(this);
     switch (this) {
       case "*":
       case "/":
