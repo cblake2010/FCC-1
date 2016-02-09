@@ -10,8 +10,8 @@ function buttonPress(arr, str) {
       break;
     case "C":
       arr.splice(arr.length - 1, 1);
-      if (!arr[0]) {str="0.0";}
-      updateDisplay(arr);
+      if (!arr[0]) {str="0.0";} else {str=arr.join("");}
+      updateDisplay(str);
       break;
     case "Calc":
       updateDisplay(eval(arr.join("")));
