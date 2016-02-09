@@ -83,7 +83,7 @@ $(document).ready(function() {
       this.allClear();
     } else if (isOperator(str) && isOperator(this.calcArr[this.calcArr.length - 1])) {
       this.calcArr.splice(this.calcArr[this.length - 1, 1])
-    } else if !(str === "." && this.atDecimal === true) {
+    } else if (str === "." && this.atDecimal === true) {
       str = "";
     }
     if (str !== "") {this.calcArr.push(str);}
