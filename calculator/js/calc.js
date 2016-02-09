@@ -1,53 +1,97 @@
-//Todo
-//Create Status Obj | numHasDecimal = Bool , atOperator = Bool , atAnswer = Bool
-
-function updateDisplay(str) {
-  $("#calc-display").html(str);
-  return str;
-}
-
 function buttonPress(calculator, str) {
   switch (str) {
     case "AC":
       calculator.allClear();
-      updateDisplay("0.0");
-      calculator.calcArr = [];
       break;
     case "C":
-      calculator.calcArr.splice(calculator.calcArr.length - 1, 1);
-      if (!calculator.calcArr[0]) {str="0.0";} else {str=calculator.calcArr.join("");}
-      updateDisplay(str);
+      calculator.clear();
       break;
     case "Calc":
-      str = updateDisplay(eval(calculator.calcArr.join("")));
-      calculator.calcArr = [];
-      calculator.calcArr.push(str);
+      calculator.calc();
       break;
     case ".":
-      if (calculator.calcArr.indexOf(str) < 0 ) {calculator.calcArr.push(str);}
+      if (calculator.calcArr.indexOf(str) < 0) {
+        calculator.calcArr.push(str);
+      }
       updateDisplay(calculator.calcArr.join(""));
       break;
     default:
-      calculator.calcArr.push(str);
-      updateDisplay(calculator.calcArr.join(""));
+      calculator.appendValue(str);
   }
   return calculator;
 }
 
 $(document).ready(function() {
-  //Create Calculator Object
-  function calculatorObj(arr, decStatus, opStatus, ansStatus) {
-    this.calcArr = arr;
-    this.atDecimal = decStatus;
-    this.atOperator = opStatus;
-    this.atAnswer = ansStatus;
+  var bool;
+  String.prototype.isOperator = function() {
+    switch this {
+      case "*":
+        ,
+      case "/":
+        ,
+      case "+":
+        ,
+      case "-":
+        bool = true;
+        break;
+      default;
+      bool = false;
+    }
+    return bool;
+
   };
+  //Create Calculator Object
+  function calculatorObj(arr, str, sol) {
+    this.calcArr = arr;
+    this.calcDisplay = str;
+    this.solution = sol;
+  };
+
+  calculatorObj.prototype.updateDisplay = function() {
+    $("#calc-display").html(this.calcDisplay);
+  }
 
   calculatorObj.prototype.allClear = function() {
     this.calcArr = [];
-    this.atDecimal = false;
-    this.atOperator = false;
-    this.atAnswer = false;
+    this.calcDisplay = "0.0";
+    this.updateDisplay();
+    this.solution = "";
+    return this;
+  }
+
+  calculatorObj.prototype.clear = function() {
+    //Remove Last Element
+    this.calcArr.splice(this.calcArr.length - 1, 1);
+    //If Removed Only Element All Clear
+    if (!this.calcArr[0]) {
+      this.allClear();
+    } else {
+      this.calcDisplay = this.calcArr.join("");
+    }
+    updateDisplay();
+    return this;
+  }
+
+  calculator.prototype.appendValue = function(str) {
+    //If the first element of the array == the solution
+    //We are at answer status
+    if (this.calcArr[0] === this.solution) {
+      //If str ! Operator All Clear Before Push
+      if (!str.isOperator()) {
+        this.allClear();
+      }
+      this.calcArr.push(str);
+      this.calcDisplay = this.calcArr.join(" ");
+      this.updateDisplay();
+    }
+    return this;
+  }
+
+  calculatorObj.prototype.calc = function() {
+    this.solution = eval(calculator.calcArr.join(""));
+    this.calcDisplay = this.solution;
+    calculator.calcArr = [];
+    calculator.calcArr.push(this.solution);
     return this;
   }
 
