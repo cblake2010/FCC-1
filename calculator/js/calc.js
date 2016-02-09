@@ -36,10 +36,13 @@ function buttonPress(calculator, str) {
 
 $(document).ready(function() {
   //Create Calculator Object
-  function calculator(calcArr, atDecimal, atOperator, atAnswer) {
-    this.calcArr = [];
-    this.allCleer();
-    function allClear(atDecimal, atOperator,atAnswer) {
+  function calculatorObj(calcArr, decStatus, opStatus, ansStatus) {
+    this.calcArr = arr;
+    this.atDecimal = decStatus;
+    this.atOperator = opStatus;
+    this.atAnswer = ansStatus;
+    function allClear() {
+      this.calcArr = [];
       this.atDecimal = false;
       this.atOperator = false;
       this.atAnswer = false;
@@ -48,6 +51,8 @@ $(document).ready(function() {
   };
 
   $(".calc-button").click(function() {
+    calculator = new calculatorObj();
+    calculator.allClear();
     calculator = buttonPress(calculator, $(this).html());
   });
 });
