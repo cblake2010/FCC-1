@@ -241,4 +241,5 @@ console.log(JSON.parse('true'));
 str = "1+2*10"
 console.log(eval(str));
 
-console.log(isNumber("1"));
+calcArr = ["1", "+", "2", "-"];
+console.log(calcArr.join("").split(/+,-,*/));
