@@ -41,10 +41,9 @@ $(document).ready(function() {
 
 
   //Create Calculator Object
-  function calculatorObj(arr, str, sol) {
+  function calculatorObj(arr, str) {
     this.calcArr = arr;
     this.calcDisplay = str;
-    this.solution = sol;
   };
 
   calculatorObj.prototype.updateDisplay = function() {
@@ -68,7 +67,7 @@ $(document).ready(function() {
     } else {
       this.calcDisplay = this.calcArr.join("");
     }
-    updateDisplay();
+    this.updateDisplay();
     return this;
   }
 
@@ -81,6 +80,8 @@ $(document).ready(function() {
     }
     //Clear the solution after use.
     this.solution = "";
+
+    console.log(this.calcArr.split(isOperator()));
     //Push Next Entered Value to Array and Display it
     this.calcArr.push(str);
     this.calcDisplay = this.calcArr.join(" ");
