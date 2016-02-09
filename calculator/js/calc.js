@@ -6,45 +6,47 @@ function updateDisplay(str) {
   return str;
 }
 
-function buttonPress(arr, str, calcStatus) {
+function buttonPress(calculator.calcArr, str, calcStatus) {
   switch (str) {
     case "AC":
-      calcStatus.atAnswer = false;
-      calcStatus.atOperator = false;
-      calcStatus.hasDecimal = false;
+      calculator.allClear();
       updateDisplay("0.0");
-      arr = [];
+      calculator.calcArr = [];
       break;
     case "C":
-      arr.splice(arr.length - 1, 1);
-      if (!arr[0]) {str="0.0";} else {str=arr.join("");}
+      calculator.calcArr.splice(calculator.calcArr.length - 1, 1);
+      if (!calculator.calcArr[0]) {str="0.0";} else {str=calculator.calcArr.join("");}
       updateDisplay(str);
       break;
     case "Calc":
-      str = updateDisplay(eval(arr.join("")));
-      arr = [];
-      arr.push(str);
+      str = updateDisplay(eval(calculator.calcArr.join("")));
+      calculator.calcArr = [];
+      calculator.calcArr.push(str);
       break;
     case ".":
-      if (arr.indexOf(str) < 0 ) {arr.push(str);}
-      updateDisplay(arr.join(""));
+      if (calculator.calcArr.indexOf(str) < 0 ) {calculator.calcArr.push(str);}
+      updateDisplay(calculator.calcArr.join(""));
       break;
     default:
-      arr.push(str);
-      updateDisplay(arr.join(""));
+      calculator.calcArr.push(str);
+      updateDisplay(calculator.calcArr.join(""));
   }
-  return arr;
+  return calculator;
 }
 
 $(document).ready(function() {
-  var calcArr = [];
-  var calcStatus = {
-    atAnswer: false,
-    hasDecimal: false,
-    atOperator: false
+  function calculator(calcArr, atDecimal, atOperator, atAnswer) {
+    this.calcArr = [];
+    this.allCleer();
+    function allClear(atDecimal, atOperator,atAnswer) {
+      this.atDecimal = false;
+      this.atOperator = false;
+      this.atAnswer = false;
+      console.log("allClear");
+    }
   };
 
   $(".calc-button").click(function() {
-    calcArr = buttonPress(calcArr, $(this).html(),calcStatus);
+    calculator = buttonPress(calculator, $(this).html());
   });
 });
