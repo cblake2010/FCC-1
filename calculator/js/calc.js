@@ -87,6 +87,7 @@ $(document).ready(function() {
     this.calcDisplay = this.solution;
     calculator.calcArr = [];
     calculator.calcArr.push(this.solution);
+    this.updateDisplay();
     return this;
   }
 
