@@ -63,8 +63,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="163.19048"
-     inkscape:cy="111.17681"
+     inkscape:cx="177.4762"
+     inkscape:cy="96.891093"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -98,10 +98,14 @@
        width="252.08736"
        height="141.73021"
        x="50.384884"
-       y="876.46136" />
+       y="876.46136"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90" />
     <g
        id="g4154"
-       transform="matrix(0.6614505,0,0,0.44700606,61.863156,503.18223)">
+       transform="matrix(0.6614505,0,0,0.44700606,61.863156,503.18223)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
@@ -119,7 +123,9 @@
     </g>
     <g
        id="g4158"
-       transform="translate(4.9872941,-2.6675176)">
+       transform="translate(4.9872941,-2.6675176)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <text
          inkscape:export-ydpi="90"
          inkscape:export-xdpi="90"
@@ -151,7 +157,9 @@
     </g>
     <g
        id="g4237"
-       transform="translate(5.5735919,59.07362)">
+       transform="translate(5.5735919,59.07362)"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <g
          transform="translate(0,-40.000001)"
          id="g4231">

@@ -1,26 +1,3 @@
-function buttonPress(calculator, str) {
-  switch (str) {
-    case "AC":
-      calculator.allClear();
-      break;
-    case "C":
-      calculator.clear();
-      break;
-    case "Calc":
-      calculator.calc();
-      break;
-    case ".":
-      if (calculator.calcArr.indexOf(str) < 0) {
-        calculator.calcArr.push(str);
-      }
-      updateDisplay(calculator.calcArr.join(""));
-      break;
-    default:
-      calculator.appendValue(str);
-  }
-  return calculator;
-}
-
 function isOperator(str) {
   var bool;
   switch (str) {
@@ -37,31 +14,65 @@ function isOperator(str) {
 
 };
 
+function buttonPress(calculator, str) {
+  switch (str) {
+    case "AC":
+      calculator.allClear();
+      break;
+    case "C":
+      calculator.clear();
+      break;
+    case "Calc":
+      calculator.calc();
+      break;
+    default:
+      //If the first element of the array == the solution
+      //We are at answer status and str ! operator
+      if ((calculator.calcArr[calculator.calcArr.length - 1] === calculator.solution) && (!isOperator(str))) {
+        calculator.allClear();
+      }  else if (isOperator(str) && isOperator(calculator.calcArr[calculator.calcArr.length - 1])) {
+        calculator.calcArr.splice(calculator.calcArr[calculator.length - 1, 1])
+      } else if (str === "." && calculator.atDecimal === true) {
+        str = "";
+      }
+      calculator.appendValue(str);
+  }
+  return calculator;
+}
+
+
+
 $(document).ready(function() {
 
 
   //Create Calculator Object
-  function calculatorObj(arr, str) {
+  function calculatorObj(arr, str, bool) {
     this.calcArr = arr;
     this.calcDisplay = str;
+    this.atDecimal = bool;
   };
 
   calculatorObj.prototype.updateDisplay = function() {
     $("#calc-display").html(this.calcDisplay);
+    if (this.calcArr[this.calcArr.length - 1] === ".") {
+      this.atDecimal = true;
+    } else {
+      this.atDecimal = false;
+    }
   }
 
   calculatorObj.prototype.allClear = function() {
     this.calcArr = [];
     this.calcDisplay = "0.0";
+    this.atDecimal = false;
     this.updateDisplay();
-    this.solution = "";
     return this;
   }
 
   calculatorObj.prototype.clear = function() {
-    //Remove Last Element
-    this.calcArr.splice(this.calcArr.length - 1, 1);
-    //If Removed Only Element All Clear
+    //Remove Last Element and check if it's a decimal
+    this.calcArr.splice(this.calcArr.length - 1, 1)
+      //If Removed Only Element All Clear
     if (!this.calcArr[0]) {
       this.allClear();
     } else {
@@ -72,19 +83,13 @@ $(document).ready(function() {
   }
 
   calculatorObj.prototype.appendValue = function(str) {
-    //If the first element of the array == the solution
-    //We are at answer status and str ! operator
-    if ((this.calcArr[this.calcArr.length-1] === this.solution) && (!isOperator(str))) {
-      console.log("All Clear");
-      this.allClear();
-    }
+
+    this.calcArr.push(str);
+    this.calcDisplay = this.calcArr.join(" ");
     //Clear the solution after use.
     this.solution = "";
 
-    console.log(this.calcArr.join("").split("+,-,*,/"));
     //Push Next Entered Value to Array and Display it
-    this.calcArr.push(str);
-    this.calcDisplay = this.calcArr.join(" ");
     this.updateDisplay();
     return this;
   }
