@@ -31,7 +31,7 @@ $(document).ready(function() {
       case "-":
         bool = true;
         break;
-      default;
+      default:
       bool = false;
     }
     return bool;
