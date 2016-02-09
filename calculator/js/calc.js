@@ -69,7 +69,7 @@ $(document).ready(function() {
     return this;
   }
 
-  calculator.prototype.appendValue = function(str) {
+  calculatorObj.prototype.appendValue = function(str) {
     //If the first element of the array == the solution
     //We are at answer status
     if (this.calcArr[0] === this.solution) {
