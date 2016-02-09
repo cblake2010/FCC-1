@@ -24,7 +24,7 @@ function buttonPress(calculator, str) {
 $(document).ready(function() {
   var bool;
   String.prototype.isOperator = function() {
-    switch this {
+    switch (this) {
       case "*":
         ,
       case "/":
