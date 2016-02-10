@@ -31,6 +31,7 @@ function buttonPress(calculator, str) {
   }
 
   calculator.updateDisplay();
+  return calculator;
 }
 
 $(document).ready(function() {
@@ -50,8 +51,6 @@ $(document).ready(function() {
     } else if (isOperator(this.calcArr[this.calcArr.length - 1])) {
       this.atDecimal = false;
     }
-
-    return this;
   }
 
   calculatorObj.prototype.allClear = function() {
@@ -59,8 +58,6 @@ $(document).ready(function() {
     this.calcDisplay = "0.0";
     this.solution = "";
     this.atDecimal = false;
-
-    return this;
   }
 
   calculatorObj.prototype.clear = function() {
@@ -72,8 +69,6 @@ $(document).ready(function() {
     } else {
       this.calcDisplay = this.calcArr.join("");
     }
-    return this;
-
   }
 
   calculatorObj.prototype.appendValue = function(str) {
@@ -94,8 +89,6 @@ $(document).ready(function() {
 
     //Clear the solution after use.
     this.solution = "";
-
-    return this;
   }
 
   calculatorObj.prototype.calc = function() {
@@ -103,8 +96,6 @@ $(document).ready(function() {
     this.calcDisplay = this.solution;
     this.calcArr = [];
     this.calcArr.push(this.solution);
-
-    return this;
   }
 
   calculator = new calculatorObj();
