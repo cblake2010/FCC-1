@@ -51,11 +51,11 @@ $(document).ready(function() {
   }];
 
   var bgColors = [
-    "rgb(0, 171, 255)",
-    "rgb(255, 0, 199)",
-    "rgb(177, 0, 255)",
-    "rgb(0, 255, 224)",
-    "rgb(36, 255, 0)"
+    "rgb(115, 98, 84)",
+    "rgb(74, 99, 76)",
+    "rgb(96, 71, 107)",
+    "rgb(54, 153, 141)",
+    "rgb(185, 179, 43)"
   ];
   //Initial Quote
   var quote = genRndItem(quotes);

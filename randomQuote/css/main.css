@@ -5,12 +5,21 @@ body {
 h1 {
   color: white;
   font-size: 36px;
-  font-weight: 1000;
+  font-weight: 900;
   padding: 50px 0 50px 0;
   text-align: center
 }
 nav {
   padding-top: 50px;
+}
+
+article.well {
+  height: 250px;
+  vertical-align: middle;
+}
+
+.quote-text {
+  padding: 40px 0 40px 0;
 }
 .quote-text {
   font-size: 24px;
