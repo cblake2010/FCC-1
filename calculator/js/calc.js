@@ -85,6 +85,8 @@ $(document).ready(function() {
       //Can't have 2 decimals in a number.  Remove it.
     } else if (str === "." && this.atDecimal === true) {
       //Do nothing because of decimal
+    } else {
+      this.calcArr.push(str);
     }
 
     //Create the Display string with space
