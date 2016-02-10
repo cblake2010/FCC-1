@@ -74,17 +74,20 @@ $(document).ready(function() {
   calculatorObj.prototype.appendValue = function(str) {
 
     //If the first element of the array == the solution
-    //We are at answer status and str ! operator
+    //We are at answer status.  If at Answer Status and number is provided. All Clear
     if ((this.calcArr[this.calcArr.length - 1] === this.solution) && (!isOperator(str))) {
       this.allClear();
+      this.calcArr.push(str);
+      //If previous input and next input are operators, remove previous and add next.
     } else if (isOperator(str) && isOperator(this.calcArr[this.calcArr.length - 1])) {
       this.calcArr.splice(this.calcArr.length - 1, 1)
-    } else if (str === "." && this.atDecimal === true) {
-      str = "";
-    }
-    if (str !== "") {
       this.calcArr.push(str);
+      //Can't have 2 decimals in a number.  Remove it.
+    } else if (str === "." && this.atDecimal === true) {
+      //Do nothing because of decimal
     }
+
+    //Create the Display string with space
     this.calcDisplay = this.calcArr.join(" ");
 
     //Clear the solution after use.
