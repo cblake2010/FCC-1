@@ -23,17 +23,24 @@ h3 {
   width: 500px;
 }
 
-.calculator-numpad {
-  padding-top: 30px 0 50px 0;
+.calculator-display-area {
+  margin: auto;
+  width: 440px;
 }
-#calc-display {
+
+.calculator-display {
+  height: 50px;
   font-family: Orbitron;
+  font-size: 26px;
   text-align: right;
 }
 
-.button:active {
-  outline: none; !important
+.calculator-numpad {
+  background-color: rgb(200,200,200);
+  border-radius: 16px;
+  padding: 30px 0 50px 0;
 }
+
 .calc-button {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -50,6 +57,6 @@ h3 {
   width: 100px;
 }
 
-#equal-button {
-  width:206px;
+.calc-button-2Wide {
+  width:210px;
 }
