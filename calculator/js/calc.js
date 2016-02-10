@@ -29,7 +29,8 @@ function buttonPress(calculator, str) {
     default:
       calculator.appendValue(str);
   }
-  return calculator;
+
+  calculator.updateDisplay();
 }
 
 $(document).ready(function() {
@@ -56,8 +57,6 @@ $(document).ready(function() {
     this.calcDisplay = "0.0";
     this.solution = "";
     this.atDecimal = false;
-    this.updateDisplay();
-    return this;
   }
 
   calculatorObj.prototype.clear = function() {
@@ -69,8 +68,6 @@ $(document).ready(function() {
     } else {
       this.calcDisplay = this.calcArr.join("");
     }
-    this.updateDisplay();
-    return this;
   }
 
   calculatorObj.prototype.appendValue = function(str) {
@@ -89,11 +86,8 @@ $(document).ready(function() {
     }
     this.calcDisplay = this.calcArr.join(" ");
 
-    //Push Next Entered Value to Array and Display it
-    this.updateDisplay();
     //Clear the solution after use.
     this.solution = "";
-    return this;
   }
 
   calculatorObj.prototype.calc = function() {
@@ -101,8 +95,6 @@ $(document).ready(function() {
     this.calcDisplay = this.solution;
     this.calcArr = [];
     this.calcArr.push(this.solution);
-    this.updateDisplay();
-    return this;
   }
 
   calculator = new calculatorObj();
