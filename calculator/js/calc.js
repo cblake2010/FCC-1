@@ -35,7 +35,6 @@ function buttonPress(calculator, str) {
 }
 
 $(document).ready(function() {
-
   //Create Calculator Object
   function calculatorObj(arr, str, bool, sol) {
     this.calcArr = arr;
