@@ -14,7 +14,7 @@ nav {
 }
 
 article.well {
-  height: 250px;
+  min-height: 300px;
   vertical-align: middle;
 }
 
