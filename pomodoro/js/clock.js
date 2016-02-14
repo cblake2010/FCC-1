@@ -1,8 +1,13 @@
+var timer;
+
 $(document).ready(function() {
   //Create Calculator Object
   function clockObj(sessionLength, breakLength) {
     this.sessionLength = sessionLength;
     this.breakLength = breakLength;
+    this.state = "off";
+    this.complete = 0;
+    this.remaining = 100;
     this.minutes = sessionLength
     this.seconds = 0;
     this.minLength = 1;
@@ -10,8 +15,8 @@ $(document).ready(function() {
   };
 
   clockObj.prototype.updateDisplay = function() {
-    console.log(this.minutes + ":" + this.seconds);
     $("#clock-display").html(this.minutes + ":" + this.seconds);
+    $(" .clock").css( "background" , "linear-gradient(180deg, cyan " + this.remaining + "%, pink 0%)" );
   };
 
   //Decreases time by 1 Second Units
@@ -22,18 +27,25 @@ $(document).ready(function() {
     } else {
       this.seconds -= 1;
     }
+    this.remaining = Math.round((((((this.minutes * 60) + this.seconds))/(this.sessionLength*60))*100)) ;
+    this.complete = 100-this.remaining;
+    this.updateDisplay();
   }
 
   clockObj.prototype.runClock = function() {
-    //Time on the clock run the loop
-    while (this.minutes > 0 || this.seconds > 0) {
-        //subtract a second
-        this.timeDecrement();
-        this.updateDisplay();
-    }
+
   }
 
+  $("#clock-display").click(function() {
+    if (clock.state === "off" ) {
+      clock.state = "on";
+      timer = setInterval(function() {clock.timeDecrement()},1000);
+    } else {
+      clock.state = "off";
+      clearInterval(timer);
+    }
+  });
   clock = new clockObj(25, 10);
-  clock.runClock();
+  clock.updateDisplay();
 
 });
