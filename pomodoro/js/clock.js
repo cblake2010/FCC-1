@@ -21,7 +21,7 @@ $(document).ready(function() {
     $("#break-control > p:nth-of-type(2)").html(this.breakLength);
     $("#session-control > p:nth-of-type(2)").html(this.sessionLength);
     $("#clock-display > p").html(this.minutes + ":" + this.seconds);
-    $(" .clock").css("background", "linear-gradient(180deg, cyan " + this.remaining + "%, pink 0%)");
+    $(" .clock").css("background", "linear-gradient(180deg, cyan " + this.remaining + "%, pink " + this.complete + "%)");
 
     if (this.active === "session") {
       $("#session-control").css("background", "green");
