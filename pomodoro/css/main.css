@@ -1,17 +1,29 @@
 body {
-  background-color: rgb(191, 210, 198);
+  background-color: rgb(180, 180, 180);
   font-family: monospace;
+  font-size: 14px;
 }
 
 h1 {
-  padding: 40px 0 40px 0;
+  font-size: 60px;
+  padding: .5em 0 .5em 0;
   text-align: center;
 }
 
 h3 {
-  color: rgb(255,255,255);
+  color: rgb(255, 255, 255);
   font-style: italic;
   text-align: center;
+}
+
+.clock-backdrop {
+  border-radius: 10%;
+  font-size: 16px;
+  line-height: 18em;
+  height: 20em;
+  margin: auto;
+  vertical-align: middle;
+  width: 22em;
 }
 
 .clock {
@@ -19,34 +31,42 @@ h3 {
   border-color: rgb(60, 60, 60);
   border-style: solid;
   border-radius: 50%;
-  margin: 10px 0 0 10px;
-  padding:30px;
-  text-align:center;
-  line-height: 350px;
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  line-height: 18em;
   vertical-align: middle;
-  font-size: 100px;
-  height: 450px;
-  width: 500px;
+  height: 20em;
+  width: 22em;
 }
 
-.clock-backdrop {
-  height: 475px;
-  margin: auto;
-  width: 525px;
+.clock > p {
+  font-size: 4em;
 }
 
 .clock-backdrop:hover {
   background: rgba(186, 200, 197, 0.60);
   border-color: rgba(186, 200, 197, 0.60);
-  border-style: solid;
-  border-radius: 10%;
   opacity: 10%;
 }
 
 .control-area {
-  padding: 10px 0 20px 0;
+  font-size: 24px;
+  padding: 0 0 1em 0;
   text-align: center;
 }
+
 .control-block {
+  border-radius: 10%;
+  border-style: solid;
   display: inline-block;
+  width: 6em;
+}
+
+.control-block:hover {
+  background: rgba(186, 200, 197, 0.60);
+}
+
+.control-block > i:hover {
+  color: red;
 }

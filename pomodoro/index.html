@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
   <!-- Latest compiled and minified CSS and font Awesome -->
   <link rel="stylesheet" href="http://fullerdevelopment.net/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://fullerdevelopment.net/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
   <!-- Optional theme -->
   <link rel="stylesheet" href="http://fullerdevelopment.net/css/bootstrap-theme.min.css">
   <!-- Latest compiled and minified JavaScript -->
@@ -23,22 +23,28 @@
   <h1 class="title">Pomodoro Clock</h1>
   <figure class="control-area row">
     <figure id="break-control" class="control-block">
-      <i class="fa fa-long-arrow-left"></i>
+      <i id="break-dec" value="-1" class="fa fa-long-arrow-left control-button"> --</i>
       <p>
         Break
       </p>
-      <i class="fa fa-long-arrow-right"></i>
+      <p>
+      </p>
+      <i id="break-inc" value="1" class="fa fa-long-arrow-right control-button"> ++</i>
     </figure>
     <figure id="session-control" class="control-block">
-      <i class="fa fa-long-arrow-left"></i>
+      <i id="ses-dec" value="-1" class="fa fa-long-arrow-left control-button"> --</i>
       <p>
         Session
       </p>
-      <i class="fa fa-long-arrow-right"></i>
+      <p>
+      </p>
+      <i id="ses-inc" value="1" class="fa fa-long-arrow-right control-button"> ++</i>
     </figure>
   </figure>
   <figure class="clock-backdrop">
     <figure id="clock-display" class="clock">
+      <p>
+      </p>
     </figure>
   </figure>
   <h3 class="title">By Tim Fuller</h3>
