@@ -1,3 +1,5 @@
+//Todo Change curso on clickable items
+
 var timer;
 
 $(document).ready(function() {
@@ -50,7 +52,12 @@ $(document).ready(function() {
     } else {
       this.seconds -= 1;
     }
-    this.remaining = Math.round((((((this.minutes * 60) + this.seconds)) / (this.sessionLength * 60)) * 100));
+
+    if (this.active ==="session") {
+      this.remaining = Math.round((((((this.minutes * 60) + this.seconds)) / (this.sessionLength * 60)) * 100));
+    } else if(this.active ==="break") {
+      this.remaining = Math.round((((((this.minutes * 60) + this.seconds)) / (this.breakLength * 60)) * 100));
+    }
     this.complete = 100 - this.remaining;
     this.updateDisplay();
   }
