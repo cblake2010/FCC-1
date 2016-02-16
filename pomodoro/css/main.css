@@ -50,6 +50,10 @@ h3 {
   opacity: 10%;
 }
 
+.clock:hover {
+  cursor: pointer;
+}
+
 .control-area {
   font-size: 24px;
   padding: 0 0 1em 0;
@@ -69,4 +73,5 @@ h3 {
 
 .control-block > i:hover {
   color: red;
+  cursor: pointer;
 }
