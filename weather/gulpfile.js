@@ -11,7 +11,7 @@ gulp.task('default', function() {
             svgoPlugins: [{removeViewBox: false}],
             use: [pngquant()]
         }))
-        .pipe(gulp.dest('dist/images'));
+        .pipe(gulp.dest('images'));
 });
 
 gulp.task('watch', function(gulpCallback) {

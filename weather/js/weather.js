@@ -19,7 +19,13 @@ $(document).ready(function() {
       console.log(json.main.temp);
       console.log(json.weather[0].main);
 
-      console.log("http://openweathermap.org/img/w/" + json.weather[0].icon + ".png");
+      //Change Background based on main weather description.  Images are named accordingly
+      var bgImage = "url(images/" + json.weather[0].main + ".jpg)";
+      var icon = "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png";
+      $("body").css("background-image", bgImage);
+      //background-image: url("paper.gif");
+
+      console.log(icon);
 
       //Thunderstorm
       //Drizzle
